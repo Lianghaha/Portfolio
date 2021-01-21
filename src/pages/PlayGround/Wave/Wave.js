@@ -8,6 +8,7 @@ export const Wave = () => {
          <div className="wave wave2"></div>
          <div className="wave wave3"></div>
          <div className="wave wave4"></div>
+         <div className="boat"></div>
       </div>
    )
 }
