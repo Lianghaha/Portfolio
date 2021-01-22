@@ -21,8 +21,8 @@ export const PlayGround = () => {
    return (
       <div className="playGround">
          <div className="moveItem"></div>
-         <div className="moveItem red"></div>
-         <div className="moveItem blue"></div>
+         <div className="moveItem"></div>
+         <div className="moveItem"></div>
          <Wave />
       </div>
    )

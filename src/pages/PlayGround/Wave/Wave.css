@@ -3,39 +3,39 @@
    width: 100%;
    height: 200px;
    overflow: hidden;
- }
- 
- .waveContaienr .boat {
+}
+
+.waveContaienr .boat {
    position: absolute;
    bottom: 50px;
    left: 15%;
    width: 125px;
    height: 125px;
-   background: url("../../../media/image/boat.png");
-   background-size: 125px 125px;
+   /* background: url("../../../media/image/boat.png"); */
+   /* background-size: 125px 125px; */
    z-index: 1001;
    animation-name: boatMove;
    animation-duration: 5s;
    animation-iteration-count: infinite;
    animation-timing-function: linear;
- }
- @keyframes boatMove {
+}
+@keyframes boatMove {
    0% {
-     transform: translateY(0);
+      transform: translateY(0);
    }
    30% {
-     transform: translateY(40px) translateX(20px) rotate(10deg);
+      transform: translateY(40px) translateX(20px) rotate(10deg);
    }
    55% {
-     transform: translateY(60px) translateX(40px) rotate(-6deg);
-     animation-timing-function: ease-in-out;
+      transform: translateY(60px) translateX(40px) rotate(-6deg);
+      animation-timing-function: ease-in-out;
    }
    100% {
-     transform: translateY(0);
+      transform: translateY(0);
    }
- }
- 
- .waveContaienr .wave {
+}
+
+.waveContaienr .wave {
    position: absolute;
    bottom: 0;
    left: 0;
@@ -43,51 +43,50 @@
    height: 100px;
    background: url("../../../media/image/wave2.png");
    background-size: 100vw 100px;
- }
- 
- .waveContaienr .wave1 {
+}
+
+.waveContaienr .wave1 {
    animation: waveMove 5s linear infinite;
    z-index: 1000;
    opacity: 0.5;
- }
- 
- .waveContaienr .wave2 {
+}
+
+.waveContaienr .wave2 {
    animation: waveMove 8s linear infinite;
    animation-direction: reverse;
    z-index: 999;
    opacity: 0.4;
    animation-delay: -5s;
    background-size: 100vw 110px;
- }
- 
- .waveContaienr .wave3 {
+}
+
+.waveContaienr .wave3 {
    animation: waveMove 12s linear infinite;
    z-index: 998;
    opacity: 0.35;
    animation-delay: -10s;
    background-size: 100vw 110px;
- }
- 
- .waveContaienr .wave4 {
+}
+
+.waveContaienr .wave4 {
    animation: waveMove 15s linear infinite;
    animation-direction: reverse;
    z-index: 997;
    opacity: 0.3;
    animation-delay: -15s;
    background-size: 100vw 110px;
- }
- 
- @keyframes waveMove {
+}
+
+@keyframes waveMove {
    0% {
-     background-position-x: 100vw;
+      background-position-x: 100vw;
    }
    100% {
-     background-position-x: 0;
+      background-position-x: 0;
    }
- }
- 
+}
 
- /* .waveContaienr {
+/* .waveContaienr {
    position: relative;
    width: 100%;
    height: 110px;
