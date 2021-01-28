@@ -16,4 +16,5 @@
 .playGround .floatItemContainer {
    grid-column: 1 / 3;
    grid-row: 1 / 3;
+   z-index: 0;
 }

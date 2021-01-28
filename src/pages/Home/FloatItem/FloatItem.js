@@ -5,23 +5,23 @@ import astronaut from "../../../media/image/astronaut.png"
 
 export const FloatItem = () => {
    useLayoutEffect(() => {
-      const container = document.querySelector(".floatItemContainer")
+      const container = document.querySelector("body")
       const ballon = document.getElementsByClassName("ballon")
       const astronaut = document.getElementsByClassName("astronaut")
       if (container) {
-         container.addEventListener("mousemove", (e) => {
-            if (ballon && astronaut) {
-               ballon[0].style.transition = "none"
-               astronaut[0].style.transition = "none"
+         container.addEventListener("mousemove", async (e) => {
+            if (ballon[0] && astronaut[0]) {
                ballon[0].style.marginLeft = e.pageX / 10 + "px"
                ballon[0].style.marginTop = e.pageY / 10 + "px"
                astronaut[0].style.marginRight = e.pageX / 10 + "px"
                astronaut[0].style.marginTop = -e.pageY / 10 + "px"
+               ballon[0].style.transition = "none"
+               astronaut[0].style.transition = "none"
             }
          })
 
          container.addEventListener("mouseleave", (e) => {
-            if (ballon && astronaut) {
+            if (ballon[0] && astronaut[0]) {
                ballon[0].style.transition = "all 0.5s ease"
                astronaut[0].style.transition = "all 0.5s ease"
                ballon[0].style.marginLeft = "0px"

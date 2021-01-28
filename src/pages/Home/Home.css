@@ -1,0 +1,29 @@
+.Home {
+   background-color: white;
+   width: 100%;
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+}
+
+.Home .waveContaienr {
+   grid-column: 1 / 3;
+   grid-row: 2 / 3;
+   align-self: end;
+}
+
+.Home .floatItemContainer {
+   grid-column: 1 / 3;
+   grid-row: 1 / 3;
+}
+
+.Home .navbarContainer {
+   grid-column: 1 / 3;
+   grid-row: 1 / 2;
+   z-index: 1;
+   padding-top: 3vh;
+   height: 100px;
+}
+
+

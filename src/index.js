@@ -4,13 +4,15 @@ import "./index.css"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { Home } from "./pages/Home/Home"
 import { PlayGround } from "./pages/PlayGround/PlayGround"
+import { Projects } from "./pages/Projects/Projects"
 
 function App() {
    return (
       <Router>
          <Switch>
-            <Route path="/Home" exact render={() => <Home />} />
-            <Route path="/" exact render={() => <PlayGround />} />
+            <Route path="/Projects" exact render={() => <Projects />} />
+            <Route path="/PlayGround" exact render={() => <PlayGround />} />
+            <Route path="/" exact render={() => <Home />} />
          </Switch>
       </Router>
    )

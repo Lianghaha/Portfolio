@@ -1,0 +1,30 @@
+.Projects {
+   background-color: white;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+body {
+   perspective: 1500px;
+}
+
+.cardContainer {
+   width: 70vw;
+   height: 70vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: pink;
+}
+.card {
+   transform-style: preserve-3d;
+   background-color: white;
+   height: 90%;
+   width: 90%;
+   border-radius: 30px;
+   padding: 0rem 5rem;
+   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
