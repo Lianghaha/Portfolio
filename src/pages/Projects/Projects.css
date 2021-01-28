@@ -3,12 +3,8 @@
    width: 100%;
    min-height: 100vh;
    display: flex;
-   justify-content: center;
+   justify-content: flex-end;
    align-items: center;
-}
-
-body {
-   perspective: 1500px;
 }
 
 .cardContainer {
@@ -18,6 +14,7 @@ body {
    justify-content: center;
    align-items: center;
    background-color: pink;
+   perspective: 1500px;
 }
 .card {
    transform-style: preserve-3d;
