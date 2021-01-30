@@ -5,25 +5,23 @@ import logo from "../../../media/image/logo.jpg"
 
 export const Navbar = () => {
    return (
-      <div className="navbarContainer">
-         <div className="navbar">
-            <div className="logo">
-               <Link to="/">
-                  <img src={logo} alt="logo" />
-               </Link>
-            </div>
-            <ul className="navRight">
-               <Link to="/PlayGround">
-                  <li className="navPlayGround navItem">PlayGround</li>
-               </Link>
-               <Link to="/Projects">
-                  <li className="navProject navItem">Projects</li>
-               </Link>
-               <Link to="/">
-                  <li className="navContact navItem">Contact</li>
-               </Link>
-            </ul>
+      <div className="navbar">
+         <div className="nav-logo">
+            <Link to="/">
+               <img src={logo} alt="logo" />
+            </Link>
          </div>
+         <ul className="nav-right">
+            <Link to="/playGround">
+               <li className="nav-playGround js-navItem">PlayGround</li>
+            </Link>
+            <Link to="/projects">
+               <li className="nav-project js-navItem">Projects</li>
+            </Link>
+            <Link to="/">
+               <li className="nav-contact js-navItem">Contact</li>
+            </Link>
+         </ul>
       </div>
    )
 }

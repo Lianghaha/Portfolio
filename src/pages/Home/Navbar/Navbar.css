@@ -1,25 +1,26 @@
-.navbarContainer .navbar {
-   height: 50px;
+.navbar {
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 0 10vw;
+   padding-top: 3vh;
+   height: 100px;
 }
 
-.navbarContainer .logo {
+.navbar .nav-logo {
 }
 
-.logo img {
+.navbar .nav-logo img {
    width: 50px;
    height: 50px;
 }
 
-.navbarContainer .navRight {
+.navbar .nav-right {
    display: flex;
    list-style: none;
 }
 
-.navbarContainer a {
+.navbar a {
    text-decoration: none;
    color: lightblue;
    margin: 0 1vw;

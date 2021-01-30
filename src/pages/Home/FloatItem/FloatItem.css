@@ -1,21 +1,21 @@
-.floatItemContainer {
+.float-items {
    position: relative;
 }
 
-.floatItemContainer .floatItem {
+.float-items .float-item {
    position: absolute;
    max-width: 125px;
    max-height: 125px;
 }
 
-.floatItemContainer .ballon {
+.float-items .js-ballon {
    top: 60%;
    left: 35%;
-   animation: moveBalloon 6s ease-in-out infinite;
+   animation: move-balloon 6s ease-in-out infinite;
    transform-origin: bottom center;
 }
 
-@keyframes moveBalloon {
+@keyframes move-balloon {
    0%,
    100% {
       transform: translateY(0) rotate(3deg);
@@ -25,13 +25,13 @@
    }
 }
 
-.floatItemContainer .astronaut {
+.float-items .js-astronaut {
    top: 20%;
    right: 35%;
-   animation: rotateAstronaut 5s ease-in-out infinite;
+   animation: rotate-astronaut 5s ease-in-out infinite;
 }
 
-@keyframes rotateAstronaut {
+@keyframes rotate-astronaut {
    0%,
    100% {
       transform: rotate(10deg) translateX(-20px);

@@ -10,8 +10,8 @@ function App() {
    return (
       <Router>
          <Switch>
-            <Route path="/Projects" exact render={() => <Projects />} />
-            <Route path="/PlayGround" exact render={() => <PlayGround />} />
+            <Route path="/projects" exact render={() => <Projects />} />
+            <Route path="/playGround" exact render={() => <PlayGround />} />
             <Route path="/" exact render={() => <Home />} />
          </Switch>
       </Router>

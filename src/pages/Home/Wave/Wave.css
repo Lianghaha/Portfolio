@@ -1,11 +1,11 @@
-.waveContaienr {
+.wave-contaienr {
    position: relative;
    width: 100%;
    height: 200px;
    overflow: hidden;
 }
 
-.waveContaienr .boat {
+.wave-contaienr .wave-boat {
    position: absolute;
    bottom: 75px;
    left: 15%;
@@ -14,9 +14,9 @@
    /* background: url("../../../media/image/boat.png"); */
    /* background-size: 125px 125px; */
    z-index: 1001;
-   animation: boatMove 5s linear infinite;
+   animation: wave-boatMove 5s linear infinite;
 }
-@keyframes boatMove {
+@keyframes wave-boatMove {
    0% {
       transform: translateY(0);
    }
@@ -32,7 +32,7 @@
    }
 }
 
-.waveContaienr .wave {
+.wave-contaienr .wave {
    position: absolute;
    bottom: 0;
    left: 0;
@@ -42,14 +42,14 @@
    background-size: 100vw 100px;
 }
 
-.waveContaienr .wave1 {
-   animation: waveMove 5s linear infinite;
+.wave-contaienr .wave1 {
+   animation: wave-waveMove 5s linear infinite;
    z-index: 1000;
    opacity: 0.5;
 }
 
-.waveContaienr .wave2 {
-   animation: waveMove 8s linear infinite;
+.wave-contaienr .wave2 {
+   animation: wave-waveMove 8s linear infinite;
    animation-direction: reverse;
    z-index: 999;
    opacity: 0.4;
@@ -57,16 +57,16 @@
    background-size: 100vw 110px;
 }
 
-.waveContaienr .wave3 {
-   animation: waveMove 12s linear infinite;
+.wave-contaienr .wave3 {
+   animation: wave-waveMove 12s linear infinite;
    z-index: 998;
    opacity: 0.35;
    animation-delay: -10s;
    background-size: 100vw 110px;
 }
 
-.waveContaienr .wave4 {
-   animation: waveMove 15s linear infinite;
+.wave-contaienr .wave4 {
+   animation: wave-waveMove 15s linear infinite;
    animation-direction: reverse;
    z-index: 997;
    opacity: 0.3;
@@ -74,7 +74,7 @@
    background-size: 100vw 110px;
 }
 
-@keyframes waveMove {
+@keyframes wave-waveMove {
    0% {
       background-position-x: 100vw;
    }

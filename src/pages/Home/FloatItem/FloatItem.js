@@ -6,8 +6,8 @@ import astronaut from "../../../media/image/astronaut.png"
 export const FloatItem = () => {
    useLayoutEffect(() => {
       const container = document.querySelector("body")
-      const ballon = document.getElementsByClassName("ballon")
-      const astronaut = document.getElementsByClassName("astronaut")
+      const ballon = document.getElementsByClassName("js-ballon")
+      const astronaut = document.getElementsByClassName("js-astronaut")
       if (container) {
          container.addEventListener("mousemove", async (e) => {
             if (ballon[0] && astronaut[0]) {
@@ -34,9 +34,13 @@ export const FloatItem = () => {
    }, [])
 
    return (
-      <div className="floatItemContainer">
-         <img src={ballon} alt="ballon" className="ballon floatItem" />
-         <img src={astronaut} alt="astronaut" className="astronaut floatItem" />
+      <div className="float-items">
+         <img src={ballon} alt="ballon" className="js-ballon float-item" />
+         <img
+            src={astronaut}
+            alt="astronaut"
+            className="js-astronaut float-item"
+         />
       </div>
    )
 }
