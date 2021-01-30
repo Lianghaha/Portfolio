@@ -9,8 +9,8 @@
 }
 
 .floatItemContainer .ballon {
-   top: 50%;
-   left: 20%;
+   top: 60%;
+   left: 35%;
    animation: moveBalloon 6s ease-in-out infinite;
    transform-origin: bottom center;
 }
@@ -26,8 +26,8 @@
 }
 
 .floatItemContainer .astronaut {
-   top: 10%;
-   right: 20%;
+   top: 20%;
+   right: 35%;
    animation: rotateAstronaut 5s ease-in-out infinite;
 }
 
