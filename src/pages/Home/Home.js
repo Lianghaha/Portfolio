@@ -5,6 +5,7 @@ import { Wave } from "./Wave/Wave"
 import { FloatItem } from "./FloatItem/FloatItem"
 import { Navbar } from "./Navbar/Navbar"
 import { Greeting } from "./Greeting/Greeting"
+import { Avatar } from "./Avatar/Avatar"
 
 export const Home = () => {
    useEffect(() => {
@@ -28,6 +29,7 @@ export const Home = () => {
       <div className="home">
          <Navbar />
          <Greeting />
+         <Avatar />
          <FloatItem />
          <Wave />
       </div>
