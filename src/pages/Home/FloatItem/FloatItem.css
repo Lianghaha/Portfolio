@@ -9,8 +9,8 @@
 }
 
 .float-items .js-ballon {
-   top: 60%;
-   left: 35%;
+   top: 65%;
+   left: 25%;
    animation: move-balloon 6s ease-in-out infinite;
    transform-origin: bottom center;
 }
@@ -26,8 +26,8 @@
 }
 
 .float-items .js-astronaut {
-   top: 20%;
-   right: 35%;
+   top: 15%;
+   left: 39%;
    animation: rotate-astronaut 5s ease-in-out infinite;
 }
 

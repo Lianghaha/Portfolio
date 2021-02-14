@@ -11,9 +11,9 @@ export const FloatItem = () => {
       if (container) {
          container.addEventListener("mousemove", async (e) => {
             if (ballon[0] && astronaut[0]) {
-               ballon[0].style.marginLeft = e.pageX / 10 + "px"
+               ballon[0].style.marginLeft = e.pageX / 7 + "px"
                ballon[0].style.marginTop = e.pageY / 10 + "px"
-               astronaut[0].style.marginRight = e.pageX / 10 + "px"
+               astronaut[0].style.marginLeft = -e.pageX / 7 + "px"
                astronaut[0].style.marginTop = -e.pageY / 10 + "px"
                ballon[0].style.transition = "none"
                astronaut[0].style.transition = "none"
