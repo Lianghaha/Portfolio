@@ -39,17 +39,17 @@ export const Avatar = () => {
          let yLow = percentage(yPosition, height) - 80
 
          gsap.to(dom.rightEye, {
-            yPercent: yHigh / 6,
-            xPercent: x / 4,
+            yPercent: yHigh / 5,
+            xPercent: x / 3.9,
          })
 
          gsap.to(dom.leftEye, {
-            yPercent: yHigh / 6,
-            xPercent: x / 4,
+            yPercent: yHigh / 5,
+            xPercent: x / 3.9,
          })
 
          gsap.to(dom.innerFace, {
-            yPercent: y / 26,
+            yPercent: y / 25,
             xPercent: x / 28,
          })
 

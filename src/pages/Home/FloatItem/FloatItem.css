@@ -10,7 +10,7 @@
 
 .float-items .js-ballon {
    top: 65%;
-   left: 25%;
+   left: 85%;
    animation: move-balloon 6s ease-in-out infinite;
    transform-origin: bottom center;
 }

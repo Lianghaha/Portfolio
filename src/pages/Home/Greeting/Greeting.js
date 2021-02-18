@@ -51,6 +51,7 @@ export const Greeting = () => {
             <span className="js-greeting-letter js-bounceIn">e</span>
             <span className="js-greeting-letter js-bounceIn">r</span>
             <span className="js-greeting-letter js-bounceIn">!</span>
+            <br />
             <p className="js-greeting-slogan">
                I bring beautiful ideas to life, and I love what I do.
             </p>

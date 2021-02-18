@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useLayoutEffect, useState } from "react"
 import "./Home.css"
 import { gsap, Power3 } from "gsap"
 import { Wave } from "./Wave/Wave"
@@ -8,7 +8,7 @@ import { Greeting } from "./Greeting/Greeting"
 import { Avatar } from "./Avatar/Avatar"
 
 export const Home = () => {
-   useEffect(() => {
+   useLayoutEffect(() => {
       //Navbar animation
       gsap
          .timeline()
@@ -50,6 +50,7 @@ export const Home = () => {
             duration: 2,
          })
    }, [])
+
    return (
       <div className="home">
          <Navbar />
