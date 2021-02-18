@@ -5,6 +5,14 @@
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr;
+   background: rgb(160, 106, 255);
+   background: linear-gradient(
+      180deg,
+      rgba(160, 106, 255, 1) 0%,
+      rgba(159, 183, 242, 1) 40%,
+      rgba(204, 229, 252, 1) 64%,
+      rgba(255, 255, 255, 1) 100%
+   );
 }
 
 .home .wave-contaienr {
