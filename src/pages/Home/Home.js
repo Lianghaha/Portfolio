@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from "react"
 import "./Home.css"
-import { gsap, Power3 } from "gsap"
+import { gsap, Power3, Elastic, Back } from "gsap"
 import { Wave } from "./Wave/Wave"
 import { FloatItem } from "./FloatItem/FloatItem"
 import { Navbar } from "./Navbar/Navbar"
@@ -42,12 +42,14 @@ export const Home = () => {
             x: 350,
             rotation: 360,
             transformOrigin: "50% 55%",
-            duration: 1,
+            duration: 2,
+            ease: Back.easeOut.config(2.6),
          })
          .from("#Avataaar_2", {
-            opacity: 0,
-            y: 100,
-            duration: 2,
+            display: "none",
+            y: 500,
+            duration: 1.2,
+            ease: Elastic.easeOut.config(0.5, 1),
          })
    }, [])
 

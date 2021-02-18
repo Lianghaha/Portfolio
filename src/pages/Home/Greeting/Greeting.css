@@ -9,8 +9,9 @@
 }
 
 .greeting .greeting-animatedLetters {
-   min-width: 390px;
+   min-width: 320px;
    height: 210px;
+   margin: 0 5vw;
    display: inline-block;
    font-family: "Bitter", serif;
    font-weight: 500;
@@ -18,12 +19,22 @@
 
 .greeting .js-greeting-letter {
    color: #0096fa;
-   font-size: 2.8rem;
+   font-size: 2.3rem;
    display: inline-block;
 }
 
 .greeting .space {
    margin-right: 12px;
+}
+
+@media (min-width: 1024px) {
+   .greeting .greeting-animatedLetters {
+      min-width: 390px;
+   }
+
+   .greeting .js-greeting-letter {
+      font-size: 2.8rem;
+   }
 }
 
 .greeting .js-hover-rubberBand {

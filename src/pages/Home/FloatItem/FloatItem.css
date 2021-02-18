@@ -4,13 +4,13 @@
 
 .float-items .float-item {
    position: absolute;
-   max-width: 125px;
-   max-height: 125px;
+   max-width: 110px;
+   max-height: 110px;
 }
 
 .float-items .js-ballon {
    top: 65%;
-   left: 85%;
+   left: 66%;
    animation: move-balloon 6s ease-in-out infinite;
    transform-origin: bottom center;
 }
@@ -27,7 +27,7 @@
 
 .float-items .js-astronaut {
    top: 15%;
-   left: 39%;
+   left: 45%;
    animation: rotate-astronaut 5s ease-in-out infinite;
 }
 
@@ -39,5 +39,15 @@
 
    50% {
       transform: rotate(-10deg) translateX(20px);
+   }
+}
+
+@media (min-width: 1024px) {
+   .float-items .js-ballon {
+      left: 86%;
+   }
+   .float-items .float-item {
+      max-width: 135px;
+      max-height: 135px;
    }
 }

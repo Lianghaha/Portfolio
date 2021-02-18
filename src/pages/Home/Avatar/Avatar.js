@@ -64,6 +64,10 @@ export const Avatar = () => {
             yPosition = e.clientY
             animateFace()
          })
+         window.addEventListener("resize", () => {
+            height = window.innerHeight
+            width = window.innerWidth
+         })
       }
    }, [])
 
