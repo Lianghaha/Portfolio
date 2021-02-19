@@ -26,8 +26,9 @@ export const Home = () => {
             ".js-ballon",
             {
                display: "none",
-               marginTop: 360,
-               duration: 2,
+               marginTop: 220,
+               duration: 3,
+               ease: Back.easeOut.config(3),
             },
             "-=1.5"
          )
@@ -39,17 +40,21 @@ export const Home = () => {
                x: 550,
                rotation: 360,
                transformOrigin: "50% 55%",
-               duration: 2,
+               duration: 1.5,
                ease: Back.easeOut.config(2.6),
             },
-            "-=1.5"
+            "-=2.5"
          )
-         .from("#Avataaar_2", {
-            display: "none",
-            y: 500,
-            duration: 1.2,
-            ease: Elastic.easeOut.config(0.5, 1),
-         })
+         .from(
+            "#Avataaar_2",
+            {
+               display: "none",
+               y: 500,
+               duration: 1.2,
+               ease: Elastic.easeOut.config(0.5, 1),
+            },
+            "-=0.8"
+         )
          //
          .from(
             ".js-astronaut",
@@ -57,23 +62,29 @@ export const Home = () => {
                display: "none",
                marginTop: -200,
                duration: 3,
+               ease: Elastic.easeOut,
             },
-            "-=2"
+            "-=1"
          )
          //Greeting
          .from(
             ".js-greeting-letter",
             {
-               stagger: 0.1,
-               duration: 0.5,
+               stagger: 0.08,
+               duration: 1,
                display: "none",
             },
             "-=2"
          )
-         .from(".js-greeting-slogan", {
-            duration: 0.5,
-            opacity: 0,
-         })
+         .from(
+            ".js-greeting-slogan",
+            {
+               y: 10,
+               duration: 0.5,
+               opacity: 0,
+            },
+            "-=0.5"
+         )
 
       gsap.timeline()
    }, [])

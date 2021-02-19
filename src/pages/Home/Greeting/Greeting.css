@@ -21,10 +21,20 @@
    color: #0096fa;
    font-size: 2.3rem;
    display: inline-block;
+   transition: color 0.3s ease-out;
 }
 
 .greeting .space {
    margin-right: 12px;
+}
+
+.greeting .js-greeting-slogan {
+   display: inline-block;
+   margin-top: 8px;
+}
+
+.greeting .js-greeting-slogan span {
+   margin-left: 2px;
 }
 
 @media (min-width: 1024px) {
@@ -39,6 +49,7 @@
 
 .greeting .js-hover-rubberBand {
    animation: greeting-rubberBand 1.5s;
+   color: #80e2fe;
 }
 
 .greeting .js-bounceIn {
@@ -50,11 +61,6 @@
    animation-duration: 1s;
    -webkit-animation-fill-mode: both;
    animation-fill-mode: both;
-}
-
-.greeting .js-greeting-slogan {
-   display: inline-block;
-   margin-top: 8px;
 }
 
 @keyframes greeting-rubberBand {

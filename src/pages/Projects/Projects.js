@@ -1,67 +1,86 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useCallback } from "react"
 import "./Projects.css"
 import tempImg from "../../media/image/testgif.gif"
 import { Navbar } from "../../lib/components/Navbar/Navbar"
 import { gsap } from "gsap"
 
 export const Projects = () => {
+   const animateCards = useCallback((container, card, xDivider, yDivider) => {
+      //Moving Animation Event
+      container.addEventListener("mousemove", (e) => {
+         //card center x Axis
+         let x = card.getBoundingClientRect().left + card.clientWidth / 2
+
+         //card center y axis
+         let y = card.getBoundingClientRect().top + card.clientHeight / 2
+
+         let xDeg = (x - e.pageX) / xDivider
+         let yDeg = (e.pageY - window.pageYOffset - y) / yDivider
+
+         card.style.transform = `rotateY(${xDeg}deg) rotateX(${yDeg}deg)`
+         // let xAxis = (window.innerWidth / 2 - e.pageX) / 25
+         // let yAxis = (e.pageY - window.innerHeight / 2) / 25
+         // card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+      })
+      //Animate In
+      container.addEventListener("mouseenter", (e) => {
+         card.style.transition = "none"
+      })
+      //Animate Out
+      container.addEventListener("mouseleave", (e) => {
+         card.style.transition = "all 0.5s ease"
+         card.style.transform = `rotateY(0deg) rotateX(0deg)`
+      })
+   }, [])
+
    useEffect(() => {
       gsap.from(
-         ".card",
+         ".js-project-slideIn",
          {
+            x: -80,
+            y: -80,
             stagger: 0.3,
-            duration: 1.6,
+            duration: 1,
             opacity: 0,
          },
          "-=2"
       )
+
       //Movement Animation to happen
-      const cards = document.querySelectorAll(".card")
-      const containers = document.querySelectorAll(".card-container")
+      // const cards = document.querySelectorAll(".card")
+      // const containers = document.querySelectorAll(".card-container")
+      const verticalCards = document.querySelectorAll(".vertical-card")
+      const verticalContainers = document.querySelectorAll(
+         ".vertical-card-container"
+      )
+      const horizontalCards = document.querySelectorAll(".horizontal-card")
+      const horizontalContainers = document.querySelectorAll(
+         ".horizontal-card-container"
+      )
 
-      for (let i = 0; i < containers.length; i++) {
-         //Moving Animation Event
-         containers[i].addEventListener("mousemove", (e) => {
-            //card center x Axis
-            let x =
-               cards[i].getBoundingClientRect().left + cards[i].clientWidth / 2
-
-            //card center y axis
-            let y =
-               cards[i].getBoundingClientRect().top + cards[i].clientHeight / 2
-
-            let xDeg = (x - e.pageX) / 30
-            let yDeg = (e.pageY - window.pageYOffset - y) / 20
-
-            cards[i].style.transform = `rotateY(${xDeg}deg) rotateX(${yDeg}deg)`
-            // let xAxis = (window.innerWidth / 2 - e.pageX) / 25
-            // let yAxis = (e.pageY - window.innerHeight / 2) / 25
-            // card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
-         })
-         //Animate In
-         containers[i].addEventListener("mouseenter", (e) => {
-            cards[i].style.transition = "none"
-         })
-         //Animate Out
-         containers[i].addEventListener("mouseleave", (e) => {
-            cards[i].style.transition = "all 0.5s ease"
-            cards[i].style.transform = `rotateY(0deg) rotateX(0deg)`
-         })
+      for (let i = 0; i < verticalContainers.length; i++) {
+         animateCards(verticalContainers[i], verticalCards[i], 39, 15)
       }
-   }, [])
+      for (let i = 0; i < horizontalContainers.length; i++) {
+         animateCards(horizontalContainers[i], horizontalCards[i], 10, 25)
+      }
+   }, [animateCards])
+
    return (
       <div className="projects">
          <Navbar />
          <div className="content">
             <div className="project-1">
-               <h1>Find The Prophets</h1>
-               <div className="display card-container">
-                  <div className="display-card card">
+               <h1 className="js-project-slideIn">
+                  FindTheProphets<span>.com</span>
+               </h1>
+               <div className="display card-container vertical-card-container">
+                  <div className="display-card card vertical-card js-project-slideIn">
                      <img src={tempImg} alt="" />
                   </div>
                </div>
-               <div className="description card-container">
-                  <div className="description-card card">
+               <div className="description card-container vertical-card-container">
+                  <div className="description-card card vertical-card js-project-slideIn">
                      <h2>Description</h2>
                      <p>
                         Lorem Ipsum is simply dummy text of the printing and
@@ -93,13 +112,23 @@ export const Projects = () => {
                   </div>
                </div>
                <div className="frontend card-container horizontal-card-container">
-                  <div className="frontend-card card horizontal-card"></div>
+                  <div className="frontend-card card horizontal-card js-project-slideIn">
+                     <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting
+                     </p>
+                  </div>
                </div>
                <div className="backend card-container horizontal-card-container">
-                  <div className="backend-card card horizontal-card"></div>
+                  <div className="backend-card card horizontal-card js-project-slideIn"></div>
                </div>
-               <div className="backend card-container horizontal-card-container">
-                  <div className="backend-card card horizontal-card"></div>
+               <div className="other card-container horizontal-card-container">
+                  <div className="other-card card horizontal-card js-project-slideIn"></div>
                </div>
             </div>
          </div>
