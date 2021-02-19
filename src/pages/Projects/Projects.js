@@ -1,8 +1,9 @@
 import React, { useEffect, useCallback } from "react"
 import "./Projects.css"
-import tempImg from "../../media/image/testgif.gif"
-import { Navbar } from "../../lib/components/Navbar/Navbar"
+import tempImg from "../../media/image/Projects/testgif.gif"
 import { gsap } from "gsap"
+import { Navbar } from "../../lib/components/Navbar/Navbar"
+import { TechComponent } from "./TechComponent/TechComponent"
 
 export const Projects = () => {
    const animateCards = useCallback((container, card, xDivider, yDivider) => {
@@ -34,17 +35,13 @@ export const Projects = () => {
    }, [])
 
    useEffect(() => {
-      gsap.from(
-         ".js-project-slideIn",
-         {
-            x: -80,
-            y: -80,
-            stagger: 0.3,
-            duration: 1,
-            opacity: 0,
-         },
-         "-=2"
-      )
+      // gsap.from(".js-project-slideIn", {
+      //    x: -80,
+      //    y: -80,
+      //    stagger: 0.2,
+      //    duration: 1,
+      //    opacity: 0,
+      // })
 
       //Movement Animation to happen
       // const cards = document.querySelectorAll(".card")
@@ -113,15 +110,7 @@ export const Projects = () => {
                </div>
                <div className="frontend card-container horizontal-card-container">
                   <div className="frontend-card card horizontal-card js-project-slideIn">
-                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into
-                        electronic typesetting
-                     </p>
+                     <TechComponent image="123" text="456" />
                   </div>
                </div>
                <div className="backend card-container horizontal-card-container">

@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from "react"
 import "./FloatItem.css"
-import ballon from "../../../media/image/ballon.png"
-import astronaut from "../../../media/image/astronaut.png"
+import Ballon from "../../../media/image/Home/Ballon.png"
+import Astronaut from "../../../media/image/Home/Astronaut.png"
 import { objAllTrue } from "../../../lib/utils"
 
 export const FloatItem = () => {
@@ -37,9 +37,9 @@ export const FloatItem = () => {
 
    return (
       <div className="float-items">
-         <img src={ballon} alt="ballon" className="js-ballon float-item" />
+         <img src={Ballon} alt="ballon" className="js-ballon float-item" />
          <img
-            src={astronaut}
+            src={Astronaut}
             alt="astronaut"
             className="js-astronaut float-item"
          />

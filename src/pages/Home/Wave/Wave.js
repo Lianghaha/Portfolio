@@ -1,6 +1,6 @@
 import React from "react"
 import "./Wave.css"
-import boat from "../../../media/image/boat.png"
+import Boat from "../../../media/image/Home/Boat.png"
 
 export const Wave = () => {
    return (
@@ -9,7 +9,7 @@ export const Wave = () => {
          <div className="wave wave2"></div>
          <div className="wave wave3"></div>
          <div className="wave wave4"></div>
-         <img src={boat} alt="boat" className="wave-boat" />
+         <img src={Boat} alt="boat" className="wave-boat" />
       </div>
    )
 }
