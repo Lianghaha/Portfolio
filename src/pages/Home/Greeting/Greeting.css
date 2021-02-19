@@ -49,7 +49,7 @@
 
 .greeting .js-hover-rubberBand {
    animation: greeting-rubberBand 1.5s;
-   color: #80e2fe;
+   color: #00d4fa;
 }
 
 .greeting .js-bounceIn {
