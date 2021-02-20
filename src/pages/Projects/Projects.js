@@ -49,21 +49,21 @@ export const Projects = () => {
    }, [])
 
    useEffect(() => {
-      // gsap.from(".js-project-slideIn", {
-      //    x: -80,
-      //    y: -80,
-      //    stagger: 0.2,
-      //    duration: 1,
-      //    opacity: 0,
-      // })
+      gsap.from(".js-project-slideIn", {
+         x: -80,
+         y: -80,
+         stagger: 0.2,
+         duration: 1,
+         opacity: 0,
+      })
 
-      // gsap.from(".tech-component", {
-      //    marginTop: -50,
-      //    marginLeft: -30,
-      //    stagger: 0.15,
-      //    duration: 1,
-      //    opacity: 0,
-      // })
+      gsap.from(".tech-component", {
+         marginTop: -50,
+         marginLeft: -30,
+         stagger: 0.15,
+         duration: 1,
+         opacity: 0,
+      })
 
       //Movement Animation to happen
       // const cards = document.querySelectorAll(".card")
@@ -95,9 +95,9 @@ export const Projects = () => {
                </h1>
                <div className="display card-container vertical-card-container">
                   <div className="display-card card vertical-card js-project-slideIn">
-                     <div className="desktop">
-                        <img src={desktop} alt="" />
-                     </div>
+                     <img src={desktop} alt="" />
+                     <img src={desktop} alt="" />
+                     <img src={desktop} alt="" />
                   </div>
                </div>
                <div className="description card-container vertical-card-container">

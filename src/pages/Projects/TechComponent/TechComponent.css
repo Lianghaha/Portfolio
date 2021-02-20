@@ -9,10 +9,17 @@
    align-items: center;
    padding-left: 15px;
    transition: transform 0.3s;
+   z-index: 100;
 }
 
 .tech-component:hover {
    transform: scale(1.08);
+}
+
+@-moz-document url-prefix() {
+   .tech-component:hover {
+      transform: none;
+   }
 }
 
 .tech-component .image-container {

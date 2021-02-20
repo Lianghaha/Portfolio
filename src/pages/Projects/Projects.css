@@ -6,7 +6,7 @@
    flex-wrap: wrap;
    justify-content: center;
    align-content: flex-start;
-   /* background-color: lightblue; */
+   /* background-color: #4e54c8; */
 }
 
 .projects .content {
@@ -31,6 +31,8 @@
    align-items: center;
    /* border: 1px solid purple; */
    perspective: 1500px;
+   -webkit-perspective: 1500px;
+   -moz-perspective: 1500px;
    margin: 0 0;
 }
 .card {
@@ -88,8 +90,29 @@
    width: 100%;
 }
 
-.projects img {
-   width: 260px;
+.projects .display-card {
+   /* display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 20px;
+   row-gap: 20px;
+   justify-content: space-between; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.projects .display-card img {
+   width: 30%;
+   min-width: 200px;
+   margin: 10px;
+}
+
+.projects .display-card img:first-child {
+   margin-right: 2%;
+}
+
+.projects .display-card img:last-child {
+   margin-left: 2%;
 }
 
 .projects hr {
