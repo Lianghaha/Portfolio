@@ -5,19 +5,19 @@ import { Navbar } from "../../lib/components/Navbar/Navbar"
 import { TechComponent } from "./TechComponent/TechComponent"
 // Images
 import desktop from "../../media/image/Projects/Desktop.gif"
-import reactIcon from "../../media/image/Projects/React.png"
-import jsIcon from "../../media/image/Projects/JavaScript.png"
-import htmlIcon from "../../media/image/Projects/HTML5.png"
-import cssIcon from "../../media/image/Projects/CSS3.png"
-import axiosIcon from "../../media/image/Projects/Axios.png"
-import nodeIcon from "../../media/image/Projects/Node.png"
-import expressIcon from "../../media/image/Projects/Express.png"
-import restAPIIcon from "../../media/image/Projects/RestAPI.png"
-import mySQLIcon from "../../media/image/Projects/MySQL.png"
-import gitIcon from "../../media/image/Projects/Git.png"
-import psIcon from "../../media/image/Projects/PS.png"
-import herokuIcon from "../../media/image/Projects/Heroku.png"
-import awsIcon from "../../media/image/Projects/AWS.png"
+import reactLogo from "../../media/image/Projects/Logo/React.png"
+import jsLogo from "../../media/image/Projects/Logo/JavaScript.png"
+import htmlLogo from "../../media/image/Projects/Logo/HTML5.png"
+import cssLogo from "../../media/image/Projects/Logo/CSS3.png"
+import axiosLogo from "../../media/image/Projects/Logo/Axios.png"
+import nodeLogo from "../../media/image/Projects/Logo/Node.png"
+import expressLogo from "../../media/image/Projects/Logo/Express.png"
+import restAPILogo from "../../media/image/Projects/Logo/RestAPI.png"
+import mySQLLogo from "../../media/image/Projects/Logo/MySQL.png"
+import gitLogo from "../../media/image/Projects/Logo/Git.png"
+import psLogo from "../../media/image/Projects/Logo/PS.png"
+import herokuLogo from "../../media/image/Projects/Logo/Heroku.png"
+import awsLogo from "../../media/image/Projects/Logo/AWS.png"
 
 export const Projects = () => {
    const animateCards = useCallback((container, card, xDivider, yDivider) => {
@@ -138,29 +138,29 @@ export const Projects = () => {
                <div className="frontend card-container horizontal-card-container">
                   <div className="frontend-card card horizontal-card js-project-slideIn">
                      <h3 className="horizontal-card-title">Front-End</h3>
-                     <TechComponent image={reactIcon} text="React.js" />
-                     <TechComponent image={jsIcon} text="JavaScript ES6+" />
-                     <TechComponent image={cssIcon} text="CSS3" />
-                     <TechComponent image={htmlIcon} text="HTML5" />
-                     <TechComponent image={axiosIcon} text="Axios" />
+                     <TechComponent image={reactLogo} text="React.js" />
+                     <TechComponent image={jsLogo} text="JavaScript ES6+" />
+                     <TechComponent image={cssLogo} text="CSS3" />
+                     <TechComponent image={htmlLogo} text="HTML5" />
+                     <TechComponent image={axiosLogo} text="Axios" />
                   </div>
                </div>
                <div className="backend card-container horizontal-card-container">
                   <div className="backend-card card horizontal-card js-project-slideIn">
                      <h3 className="horizontal-card-title">Back-End</h3>
-                     <TechComponent image={nodeIcon} text="Node.js" />
-                     <TechComponent image={expressIcon} text="Express" />
-                     <TechComponent image={mySQLIcon} text="MySQL" />
-                     <TechComponent image={restAPIIcon} text="RESTful API" />
+                     <TechComponent image={nodeLogo} text="Node.js" />
+                     <TechComponent image={expressLogo} text="Express" />
+                     <TechComponent image={mySQLLogo} text="MySQL" />
+                     <TechComponent image={restAPILogo} text="RESTful API" />
                   </div>
                </div>
                <div className="other card-container horizontal-card-container">
                   <div className="other-card card horizontal-card js-project-slideIn">
                      <h3 className="horizontal-card-title">Other</h3>
-                     <TechComponent image={gitIcon} text="Git" />
-                     <TechComponent image={psIcon} text="Photoshop" />
-                     <TechComponent image={herokuIcon} text="Heroku" />
-                     <TechComponent image={awsIcon} text="AWS" />
+                     <TechComponent image={gitLogo} text="Git" />
+                     <TechComponent image={psLogo} text="Photoshop" />
+                     <TechComponent image={herokuLogo} text="Heroku" />
+                     <TechComponent image={awsLogo} text="AWS" />
                   </div>
                </div>
             </div>
@@ -210,22 +210,22 @@ export const Projects = () => {
                <div className="frontend card-container horizontal-card-container">
                   <div className="frontend-card card horizontal-card js-project-slideIn">
                      <h3 className="horizontal-card-title">Front-End</h3>
-                     <TechComponent image={reactIcon} text="React.js" />
-                     <TechComponent image={jsIcon} text="Javascript ES6+" />
-                     <TechComponent image={cssIcon} text="CSS3" />
-                     <TechComponent image={htmlIcon} text="HTML5" />
+                     <TechComponent image={reactLogo} text="React.js" />
+                     <TechComponent image={jsLogo} text="Javascript ES6+" />
+                     <TechComponent image={cssLogo} text="CSS3" />
+                     <TechComponent image={htmlLogo} text="HTML5" />
                   </div>
                </div>
                <div className="backend card-container horizontal-card-container">
                   <div className="backend-card card horizontal-card js-project-slideIn">
                      <h3 className="horizontal-card-title">Back-End</h3>
-                     <TechComponent image={reactIcon} text="TESTESTEST" />
+                     <TechComponent image={reactLogo} text="TESTESTEST" />
                   </div>
                </div>
                <div className="other card-container horizontal-card-container">
                   <div className="other-card card horizontal-card js-project-slideIn">
                      <h3 className="horizontal-card-title">Other</h3>
-                     <TechComponent image={reactIcon} text="TESTTEST" />
+                     <TechComponent image={reactLogo} text="TESTTEST" />
                   </div>
                </div>
             </div>
