@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect } from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { HashRouter as Router, Switch, Route } from "react-router-dom"
 import { Home } from "./pages/Home/Home"
 import { PlayGround } from "./pages/PlayGround/PlayGround"
 import { Projects } from "./pages/Projects/Projects"
@@ -14,7 +14,7 @@ function App() {
       setTimeout(() => setLoader(false), 1000)
    }, [])
    return (
-      <Router>
+      <Router basename="/">
          {loader ? (
             <Loader />
          ) : (
