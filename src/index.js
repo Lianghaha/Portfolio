@@ -22,7 +22,7 @@ function App() {
             <Switch>
                <Route path="/projects" exact render={() => <Projects />} />
                <Route path="/playGround" exact render={() => <PlayGround />} />
-               <Route path="/" exact render={() => <Home />} />
+               <Route path="/Portfolio" exact render={() => <Home />} />
             </Switch>
          )}
       </Router>
