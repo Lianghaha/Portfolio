@@ -4,7 +4,8 @@ import { gsap } from "gsap"
 import { Navbar } from "../../lib/components/Navbar/Navbar"
 import { TechComponent } from "./TechComponent/TechComponent"
 // Images
-import desktop from "../../media/image/Projects/Desktop.gif"
+import desktop from "../../media/image/Projects/Group.gif"
+
 import reactLogo from "../../media/image/Projects/Logo/React.png"
 import jsLogo from "../../media/image/Projects/Logo/JavaScript.png"
 import htmlLogo from "../../media/image/Projects/Logo/HTML5.png"
@@ -95,8 +96,6 @@ export const Projects = () => {
                </h1>
                <div className="display card-container vertical-card-container">
                   <div className="display-card card vertical-card js-project-slideIn">
-                     <img src={desktop} alt="" />
-                     <img src={desktop} alt="" />
                      <img src={desktop} alt="" />
                   </div>
                </div>

@@ -43,7 +43,7 @@ export const Home = () => {
                duration: 1.5,
                ease: Back.easeOut.config(2.6),
             },
-            "-=2.5"
+            "-=2.8"
          )
          .from(
             "#Avataaar_2",
@@ -53,7 +53,7 @@ export const Home = () => {
                duration: 1.2,
                ease: Elastic.easeOut.config(0.5, 1),
             },
-            "-=0.8"
+            "-=1.25"
          )
          //
          .from(
