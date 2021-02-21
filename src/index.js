@@ -13,7 +13,6 @@ function App() {
    useLayoutEffect(() => {
       setTimeout(() => setLoader(false), 1000)
    }, [])
-   //testes
    return (
       <Router>
          {loader ? (
@@ -22,7 +21,7 @@ function App() {
             <Switch>
                <Route path="/projects" exact render={() => <Projects />} />
                <Route path="/playGround" exact render={() => <PlayGround />} />
-               <Route path="/Portfolio" exact render={() => <Home />} />
+               <Route path="/" render={() => <Home />} />
             </Switch>
          )}
       </Router>
