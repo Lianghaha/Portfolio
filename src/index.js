@@ -13,7 +13,7 @@ function App() {
    useLayoutEffect(() => {
       setTimeout(() => setLoader(false), 1000)
    }, [])
-
+   //testes
    return (
       <Router>
          {loader ? (
