@@ -47,7 +47,7 @@
 
 .projects .horizontal-card-container {
    width: 33.3%;
-   min-width: 300px;
+   min-width: 280px;
 }
 
 .projects .horizontal-card {
@@ -97,6 +97,7 @@
    width: 100%;
    max-height: 300px;
    object-fit: contain;
+   margin: 10px 0;
 }
 
 .projects hr {
