@@ -8,7 +8,7 @@
    overflow: hidden;
 }
 
-.home .wave-contaienr {
+.home .wave-container {
    grid-column: 1 / 3;
    grid-row: 2 / 3;
    align-self: end;

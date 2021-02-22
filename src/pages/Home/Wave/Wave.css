@@ -1,11 +1,11 @@
-.wave-contaienr {
+.wave-container {
    position: relative;
    width: 100%;
    height: 160px;
    overflow: hidden;
 }
 
-.wave-contaienr .wave-boat {
+.wave-container .wave-boat {
    position: absolute;
    bottom: 75px;
    left: 15%;
@@ -32,7 +32,7 @@
    }
 }
 
-.wave-contaienr .wave {
+.wave-container .wave {
    position: absolute;
    bottom: 0;
    left: 0;
@@ -42,13 +42,13 @@
    background-size: 100vw 100px;
 }
 
-.wave-contaienr .wave1 {
+.wave-container .wave1 {
    animation: wave-waveMove 5s linear infinite;
    z-index: 1000;
    opacity: 0.5;
 }
 
-.wave-contaienr .wave2 {
+.wave-container .wave2 {
    animation: wave-waveMove 8s linear infinite;
    animation-direction: reverse;
    z-index: 999;
@@ -57,7 +57,7 @@
    background-size: 100vw 110px;
 }
 
-.wave-contaienr .wave3 {
+.wave-container .wave3 {
    animation: wave-waveMove 12s linear infinite;
    z-index: 998;
    opacity: 0.35;
@@ -65,7 +65,7 @@
    background-size: 100vw 110px;
 }
 
-.wave-contaienr .wave4 {
+.wave-container .wave4 {
    animation: wave-waveMove 15s linear infinite;
    animation-direction: reverse;
    z-index: 997;

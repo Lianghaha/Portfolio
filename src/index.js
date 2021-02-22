@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from "react"
+import React, { useState } from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
 import { HashRouter as Router, Switch, Route } from "react-router-dom"
@@ -10,13 +10,10 @@ import { Loader } from "./pages/Loader/Loader"
 function App() {
    const [loader, setLoader] = useState(true)
 
-   useLayoutEffect(() => {
-      setTimeout(() => setLoader(false), 1000)
-   }, [])
    return (
       <Router basename="/">
          {loader ? (
-            <Loader />
+            <Loader setLoader={setLoader} />
          ) : (
             <Switch>
                <Route path="/projects" exact render={() => <Projects />} />

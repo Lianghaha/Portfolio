@@ -3,9 +3,10 @@ import "./Projects.css"
 import { gsap } from "gsap"
 import { Navbar } from "../../lib/components/Navbar/Navbar"
 import { TechComponent } from "./TechComponent/TechComponent"
-// Images
-import desktop from "../../media/image/Projects/Opt-FDP-Group-600.gif"
 
+//Gif
+import desktop from "../../media/image/Projects/Opt-FDP-Group-600.gif"
+// Icon
 import reactIcon from "../../media/image/Projects/Stack-Icon/React.png"
 import jsIcon from "../../media/image/Projects/Stack-Icon/JavaScript.png"
 import htmlIcon from "../../media/image/Projects/Stack-Icon/HTML5.png"
@@ -19,6 +20,8 @@ import gitIcon from "../../media/image/Projects/Stack-Icon/Git.png"
 import psIcon from "../../media/image/Projects/Stack-Icon/PS.png"
 import herokuIcon from "../../media/image/Projects/Stack-Icon/Heroku.png"
 import awsIcon from "../../media/image/Projects/Stack-Icon/AWS.png"
+//React-Icon
+import { BiLinkExternal } from "react-icons/bi"
 
 export const Projects = () => {
    const animateCards = useCallback((container, card, xDivider, yDivider) => {
@@ -50,21 +53,21 @@ export const Projects = () => {
    }, [])
 
    useEffect(() => {
-      gsap.from(".js-project-slideIn", {
-         x: -80,
-         y: -80,
-         stagger: 0.2,
-         duration: 1,
-         opacity: 0,
-      })
+      // gsap.from(".js-project-slideIn", {
+      //    x: -80,
+      //    y: -80,
+      //    stagger: 0.2,
+      //    duration: 1,
+      //    opacity: 0,
+      // })
 
-      gsap.from(".tech-component", {
-         marginTop: -50,
-         marginLeft: -30,
-         stagger: 0.15,
-         duration: 1,
-         opacity: 0,
-      })
+      // gsap.from(".tech-component", {
+      //    marginTop: -50,
+      //    marginLeft: -30,
+      //    stagger: 0.15,
+      //    duration: 1,
+      //    opacity: 0,
+      // })
 
       //Movement Animation to happen
       // const cards = document.querySelectorAll(".card")
@@ -90,15 +93,26 @@ export const Projects = () => {
       <div className="projects">
          <Navbar />
          <div className="content">
-            <div className="project-1">
-               <h1 className="project-title js-project-slideIn">
-                  FindTheProphets<span>.com</span>
-               </h1>
-               <div className="display card-container vertical-card-container">
-                  <div className="display-card card vertical-card js-project-slideIn">
-                     <img src={desktop} alt="" />
-                  </div>
+            <div className="project-1 project-item">
+               <div className="display-container js-project-slideIn">
+                  <img src={desktop} alt="" />
                </div>
+               <div className="project-title-container js-project-slideIn">
+                  <a
+                     className="project-title"
+                     href="https://www.findtheprophets.com/"
+                  >
+                     <h1>
+                        FindTheProphets<span>.com</span>
+                     </h1>
+                     <BiLinkExternal size="2.6rem" color="#0099ff" />
+                  </a>
+               </div>
+
+               {/* <div className="display card-container vertical-card-container">
+                  <div className="display-card card vertical-card js-project-slideIn">
+                  </div>
+               </div> */}
                <div className="description card-container vertical-card-container">
                   <div className="description-card card vertical-card js-project-slideIn">
                      <h2>Description</h2>
@@ -164,13 +178,19 @@ export const Projects = () => {
                </div>
             </div>
             <hr />
-            <div className="project-1">
-               <h1 className="project-title js-project-slideIn">
-                  FindTheProphets<span>.com</span>
-               </h1>
-               <div className="display card-container vertical-card-container">
-                  <div className="display-card card vertical-card js-project-slideIn"></div>
+            <div className="project-2 project-item">
+               <div className="project-title-container js-project-slideIn">
+                  <a
+                     className="project-title"
+                     href="https://lianghaha.github.io/Portfolio/#/"
+                  >
+                     <h1>
+                        <span>this.</span>Portfolio
+                     </h1>
+                     <BiLinkExternal size="2.6rem" color="#0099ff" />
+                  </a>
                </div>
+
                <div className="description card-container vertical-card-container">
                   <div className="description-card card vertical-card js-project-slideIn">
                      <h2>Description</h2>

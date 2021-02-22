@@ -2,7 +2,26 @@
    width: 100%;
    height: 100vh;
    display: flex;
-   background-color: lightblue;
+   flex-wrap: wrap;
    justify-content: center;
-   align-items: center;
+   align-content: center;
+}
+
+.loader .container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.logoBlue-container {
+   margin-bottom: 15px;
+}
+
+#logoBlue-svg {
+   height: 100px;
+   fill: black;
+}
+
+#keepExploring-svg {
+   height: 30px;
 }

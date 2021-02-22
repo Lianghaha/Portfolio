@@ -1,4 +1,4 @@
-/* Project Page CSS */
+/** Project Page CSS */
 .projects {
    width: 100%;
    height: 300vh;
@@ -15,7 +15,7 @@
 
 @media (min-width: 1200px) {
    .projects .content {
-      width: 55%;
+      width: 60%;
    }
 }
 
@@ -24,7 +24,7 @@
    align-self: flex-start;
 }
 
-/* General Card CSS */
+/** ----- General Card CSS -----*/
 .card-container {
    display: flex;
    justify-content: center;
@@ -42,7 +42,7 @@
    border-radius: 30px;
    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2); */
    padding: 20px 25px;
-   margin: 15px 20px;
+   margin: 25px 20px;
 }
 
 .projects .horizontal-card-container {
@@ -60,46 +60,69 @@
    margin-left: 8px;
 }
 
-/* Titles */
-.projects .project-title,
+/**----- Titles -----*/
+.projects .project-title-container {
+   width: 100%;
+   margin: 0 22.5px;
+}
+
+.projects .project-title {
+   text-decoration: none;
+   color: black;
+   display: flex;
+   flex-wrap: wrap;
+   width: fit-content;
+   cursor: pointer;
+   transition: all 0.3s;
+   padding-bottom: 2px;
+}
+
+.projects .project-title:hover {
+   transform: scale(1.02);
+   -webkit-box-shadow: 0px 9px 1px -3px #0099ff;
+   -moz-box-shadow: 0px 9px 1px -3px #0099ff;
+   box-shadow: 0px 9px 1px -3px #0099ff;
+}
+
+.projects .project-title h1 {
+   margin-right: 6px;
+}
+
+.projects .project-title span {
+   color: #0099ff;
+}
+
 .projects .project-subtitle {
    width: 100%;
    margin: 0 22.5px;
 }
 
-.projects .project-subtitle {
-   margin-top: 20px;
-}
-
-.projects span {
-   color: #0099ff;
-}
-
-/* Project 1 - FindTheProphets.com */
-.projects .project-1 {
+/**-----  Project General -----*/
+.projects .project-item {
    width: 100%;
    display: flex;
    flex-wrap: wrap;
    align-content: flex-start;
 }
 
-.projects .display {
+.projects hr {
+   margin: 70px 0;
+   opacity: 60%;
+   height: 2px;
+   background-color: #f3f3f3;
+}
+
+/**-----  Project 1 - FindTheProphets.com -----*/
+.projects .display-container {
    width: 100%;
-}
-
-.projects .display-card {
    display: flex;
-   flex-wrap: wrap;
    justify-content: center;
+   padding: 30px 10px;
 }
 
-.projects .display-card img {
+.projects .display-container img {
    width: 100%;
    max-height: 300px;
    object-fit: contain;
    margin: 10px 0;
-}
-
-.projects hr {
-   margin: 100px 0;
 }

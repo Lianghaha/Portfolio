@@ -5,7 +5,7 @@
    padding-right: 12vw;
 }
 
-svg {
+.avatar svg {
    width: 20vw;
    min-width: 300px;
    max-height: 500px;
