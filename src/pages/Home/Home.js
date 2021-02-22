@@ -23,7 +23,7 @@ export const Home = () => {
                x: window.innerWidth / 2 - logoXCoord,
                y: window.innerHeight / 2 - logoYCoord,
                scale: 2,
-               duration: 0.3,
+               duration: 0.6,
                ease: Power3.easeIn,
             })
             .from(
@@ -106,9 +106,9 @@ export const Home = () => {
                ".wave-container",
                {
                   opacity: 0,
-                  duration: 2,
+                  duration: 3,
                },
-               "-=3"
+               "-=1.5"
             )
       }
    }, [])

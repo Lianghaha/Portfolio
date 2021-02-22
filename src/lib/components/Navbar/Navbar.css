@@ -8,6 +8,7 @@
 }
 
 .navbar .nav-logo {
+   z-index: 1000;
 }
 
 .navbar .nav-logo img {
