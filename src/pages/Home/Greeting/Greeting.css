@@ -29,13 +29,18 @@
 }
 
 .greeting .js-greeting-slogan {
-   display: inline-block;
-   margin-top: 8px;
+   margin-top: 10px;
    color: var(--main-color);
 }
 
-.greeting .js-greeting-slogan span {
-   margin-left: 2px;
+.greeting .js-greeting-slogan p {
+   display: inline;
+}
+/* greeting icon */
+.greeting .js-greeting-slogan svg {
+   margin-left: 5px;
+   font-size: 1.5em;
+   margin-bottom: -5.5px;
 }
 
 @media (min-width: 1024px) {
@@ -67,37 +72,30 @@
 @keyframes greeting-rubberBand {
    from {
       transform: scale3d(1, 1, 1);
-      /* transform: scaleX(1) scaleY(1) scaleZ(1); */
    }
 
    30% {
       transform: scale3d(1.25, 0.75, 1);
-      /* transform: scaleX(1.25) scaleY(0.75) scaleZ(1); */
    }
 
    40% {
       transform: scale3d(0.75, 1.25, 1);
-      /* transform: scaleX(0.75) scaleY(1.25) scaleZ(1); */
    }
 
    50% {
       transform: scale3d(1.15, 0.85, 1);
-      /* transform: scaleX(1.15) scaleY(0.85) scaleZ(1); */
    }
 
    65% {
       transform: scale3d(0.95, 1.05, 1);
-      /* transform: scaleX(0.95) scaleY(1.05) scaleZ(1); */
    }
 
    75% {
       transform: scale3d(1.05, 0.95, 1);
-      /* transform: scaleX(1.05) scaleY(0.95) scaleZ(1); */
    }
 
    to {
       transform: scale3d(1, 1, 1);
-      /* transform: scaleX(1) scaleY(1) scaleZ(1); */
    }
 }
 

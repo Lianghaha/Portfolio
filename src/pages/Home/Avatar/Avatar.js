@@ -93,6 +93,7 @@ export const Avatar = () => {
    return (
       <div className="avatar">
          <svg
+         className="avatar-circle"
             width="700"
             height="743"
             viewBox="0 0 700 743"

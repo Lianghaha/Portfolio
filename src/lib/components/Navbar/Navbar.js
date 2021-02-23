@@ -2,6 +2,10 @@ import React from "react"
 import "./Navbar.css"
 import { Link } from "react-router-dom"
 import logo from "../../../media/image/logoBlue.svg"
+//React-icons
+import { IoRocketOutline } from "react-icons/io5"
+import { RiContactsLine } from "react-icons/ri"
+import { IoChatbubbleEllipsesOutline } from "react-icons/io5"
 
 export const Navbar = () => {
    return (
@@ -12,14 +16,20 @@ export const Navbar = () => {
             </Link>
          </div>
          <ul className="nav-right">
-            <Link to="/playGround">
-               <li className="nav-playGround js-navItem">PlayGround</li>
-            </Link>
             <Link to="/projects">
-               <li className="nav-project js-navItem">Projects</li>
+               <li className="nav-project js-navItem">
+                  <IoRocketOutline />
+               </li>
             </Link>
             <Link to="/">
-               <li className="nav-contact js-navItem">Contact</li>
+               <li className="nav-skill js-navItem">
+                  <RiContactsLine />
+               </li>
+            </Link>
+            <Link to="/">
+               <li className="nav-contact js-navItem">
+                  <IoChatbubbleEllipsesOutline />
+               </li>
             </Link>
          </ul>
       </div>

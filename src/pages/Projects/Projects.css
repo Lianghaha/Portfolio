@@ -97,11 +97,11 @@
 .projects .project-title svg {
    color: var(--main-color);
    font-size: 1.8rem;
-   -webkit-animation: bounce 3s infinite ease-in-out;
-   -o-animation: bounce 3s infinite ease-in-out;
-   -ms-animation: bounce 3s infinite ease-in-out;
-   -moz-animation: bounce 3s infinite ease-in-out;
-   animation: bounce 3s infinite ease-in-out;
+   -webkit-animation: bounce 1.8s infinite ease-in-out;
+   -o-animation: bounce 1.8s infinite ease-in-out;
+   -ms-animation: bounce 1.8s infinite ease-in-out;
+   -moz-animation: bounce 1.8s infinite ease-in-out;
+   animation: bounce 1.8s infinite ease-in-out;
 }
 
 .projects .project-subtitle {
@@ -119,7 +119,7 @@
 
 .projects hr {
    margin: 70px 0;
-   opacity: 60%;
+   opacity: 50%;
    height: 2px;
    background-color: var(--card-color);
 }
