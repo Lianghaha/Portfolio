@@ -18,10 +18,10 @@
 }
 
 .greeting .js-greeting-letter {
-   color: #0096fa;
    font-size: 2.3rem;
    display: inline-block;
    transition: color 0.3s ease-out;
+   color: var(--main-color);
 }
 
 .greeting .space {
@@ -31,6 +31,7 @@
 .greeting .js-greeting-slogan {
    display: inline-block;
    margin-top: 8px;
+   color: var(--main-color);
 }
 
 .greeting .js-greeting-slogan span {

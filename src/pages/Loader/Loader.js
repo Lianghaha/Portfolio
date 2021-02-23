@@ -45,16 +45,16 @@ export const Loader = (props) => {
    }, [])
    return (
       <div className="loader">
-         <div className="logoBlue-container container">
+         <div className="logo-container container">
             <svg
-               id="logoBlue-svg"
+               id="logo-svg"
                width="1803"
                height="2048"
                viewBox="0 0 1803 2048"
                fill="none"
                xmlns="http://www.w3.org/2000/svg"
             >
-               <g id="logoBlue">
+               <g id="logo">
                   <g id="frame">
                      <path
                         id="line6"

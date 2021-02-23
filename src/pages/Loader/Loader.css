@@ -13,13 +13,12 @@
    justify-content: center;
 }
 
-.logoBlue-container {
+.logo-container {
    margin-bottom: 15px;
 }
 
-#logoBlue-svg {
+#logo-svg {
    height: 100px;
-   fill: black;
 }
 
 #keepExploring-svg {

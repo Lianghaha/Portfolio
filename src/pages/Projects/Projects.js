@@ -53,21 +53,21 @@ export const Projects = () => {
    }, [])
 
    useEffect(() => {
-      // gsap.from(".js-project-slideIn", {
-      //    x: -80,
-      //    y: -80,
-      //    stagger: 0.2,
-      //    duration: 1,
-      //    opacity: 0,
-      // })
+      gsap.from(".js-project-slideIn", {
+         x: -80,
+         y: -80,
+         stagger: 0.2,
+         duration: 1.5,
+         opacity: 0,
+      })
 
-      // gsap.from(".tech-component", {
-      //    marginTop: -50,
-      //    marginLeft: -30,
-      //    stagger: 0.15,
-      //    duration: 1,
-      //    opacity: 0,
-      // })
+      gsap.from(".tech-component", {
+         marginTop: -50,
+         marginLeft: -30,
+         stagger: 0.15,
+         duration: 1,
+         opacity: 0,
+      })
 
       //Movement Animation to happen
       // const cards = document.querySelectorAll(".card")
@@ -105,7 +105,7 @@ export const Projects = () => {
                      <h1>
                         FindTheProphets<span>.com</span>
                      </h1>
-                     <BiLinkExternal size="2.6rem" color="#0099ff" />
+                     <BiLinkExternal />
                   </a>
                </div>
 
@@ -187,7 +187,7 @@ export const Projects = () => {
                      <h1>
                         <span>this.</span>Portfolio
                      </h1>
-                     <BiLinkExternal size="2.6rem" color="#0099ff" />
+                     <BiLinkExternal />
                   </a>
                </div>
 
