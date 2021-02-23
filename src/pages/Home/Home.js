@@ -116,12 +116,10 @@ export const Home = () => {
             .from(
                ".greeting-emoji",
                {
-                  marginTop: -2,
-                  duration: 0.3,
                   opacity: 0,
-                  ease: Power3.easeOut,
+                  duration: 0.3,
                },
-               "-=0.3"
+               "-=0"
             )
             .from(
                ".wave-container",

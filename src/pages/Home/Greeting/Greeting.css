@@ -37,7 +37,7 @@
 }
 
 .greeting .js-greeting-slogan p {
-   line-height: 35px;
+   line-height: 30px;
    max-width: 350px;
 }
 /* greeting icon */
@@ -57,7 +57,6 @@
    display: inline-block;
    margin-left: 3px;
    font-size: 1.5em;
-   margin-top: -12px;
    transition: all 0.3s;
 }
 

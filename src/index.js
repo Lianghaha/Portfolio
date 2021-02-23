@@ -8,7 +8,7 @@ import { Projects } from "./pages/Projects/Projects"
 import { Loader } from "./pages/Loader/Loader"
 
 function App() {
-   const [loader, setLoader] = useState(true)
+   const [loader, setLoader] = useState(false)
 
    return (
       <Router basename="/">
