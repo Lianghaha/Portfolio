@@ -29,7 +29,7 @@
 }
 
 .greeting .js-greeting-slogan {
-   margin-top: 12px;
+   margin-top: 5px;
    color: var(--main-color);
    font-weight: 600;
    /* emoji */
@@ -37,7 +37,8 @@
 }
 
 .greeting .js-greeting-slogan p {
-   /* display: inline; */
+   line-height: 35px;
+   max-width: 350px;
 }
 /* greeting icon */
 /* react-icon */
@@ -53,6 +54,7 @@
 
 /* emoji */
 .greeting .greeting-emoji {
+   display: inline-block;
    margin-left: 3px;
    font-size: 1.5em;
    margin-top: -12px;
@@ -70,6 +72,9 @@
 
    .greeting .js-greeting-letter {
       font-size: 2.8rem;
+   }
+   .greeting .js-greeting-slogan p {
+      max-width: none;
    }
 }
 

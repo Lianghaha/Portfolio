@@ -23,7 +23,7 @@
    list-style: none;
    /* Hover Animation */
    /* margin-bottom: -58px; */
-   margin-bottom: -50px;
+   margin-top: 39px;
 }
 
 .navbar a {
@@ -63,7 +63,7 @@
 
 .navbar a:hover p {
    opacity: 1;
-   transform: translateY(-30px);
+   transform: translateY(-26px);
 }
 
 /* Skills and About complete */
@@ -75,5 +75,5 @@
 .navbar a:hover .nav-skills p,
 .navbar a:hover .nav-contact p {
    opacity: 1;
-   transform: translateY(-39px);
+   transform: translateY(-35px);
 }
