@@ -34,7 +34,8 @@
    font-weight: 600;
    /* emoji */
    display: flex;
-   /* max-width: 399px;
+}
+/* max-width: 399px;
 } */
 
 .greeting .js-greeting-slogan p {
