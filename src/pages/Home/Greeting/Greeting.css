@@ -34,11 +34,11 @@
    font-weight: 600;
    /* emoji */
    display: flex;
-}
+   /* max-width: 399px;
+} */
 
 .greeting .js-greeting-slogan p {
    line-height: 30px;
-   max-width: 350px;
 }
 /* greeting icon */
 /* react-icon */
