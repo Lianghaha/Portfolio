@@ -32,10 +32,9 @@ export const Greeting = () => {
             <span className="js-greeting-letter js-bounceIn">'</span>
             <span className="js-greeting-letter js-bounceIn space">m</span>
             <span className="js-greeting-letter js-bounceIn">L</span>
-            <span className="js-greeting-letter js-bounceIn">i</span>
-            <span className="js-greeting-letter js-bounceIn">a</span>
+            <span className="js-greeting-letter js-bounceIn">e</span>
+            <span className="js-greeting-letter js-bounceIn">o</span>
             <span className="js-greeting-letter js-bounceIn">n</span>
-            <span className="js-greeting-letter js-bounceIn">g</span>
             <span className="js-greeting-letter js-bounceIn">,</span>
             <br />
             <span className="js-greeting-letter js-bounceIn space">A</span>
