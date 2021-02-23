@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import "./Greeting.css"
-import { FaRegSmileWink } from "react-icons/fa"
+// import { FaRegSmileWink } from "react-icons/fa"
 
 export const Greeting = () => {
    useEffect(() => {
@@ -55,7 +55,10 @@ export const Greeting = () => {
             <br />
             <div className="js-greeting-slogan">
                <p> I bring beautiful ideas to life, and I love what I do</p>
-               <FaRegSmileWink />
+               {/* <FaRegSmileWink /> */}
+               <div className="greeting-emoji" role="img" aria-label="wink">
+                  😉
+               </div>
             </div>
          </div>
       </div>

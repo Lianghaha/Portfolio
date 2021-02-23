@@ -19,16 +19,25 @@ export const Navbar = () => {
             <Link to="/projects">
                <li className="nav-project js-navItem">
                   <IoRocketOutline />
+                  <p>Projects</p>
                </li>
             </Link>
-            <Link to="/">
-               <li className="nav-skill js-navItem">
+            <Link to="">
+               <li className="nav-skills js-navItem">
                   <RiContactsLine />
+                  {/* <p>Skills</p>
+                  <p>&</p>
+                  <p>About</p> */}
+                  <p>Coming</p>
+                  <p>Soon</p>
                </li>
             </Link>
-            <Link to="/">
+            <Link to="">
                <li className="nav-contact js-navItem">
                   <IoChatbubbleEllipsesOutline />
+                  {/* <p>Contact</p> */}
+                  <p>Coming</p>
+                  <p>Soon</p>
                </li>
             </Link>
          </ul>

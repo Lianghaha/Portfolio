@@ -30,8 +30,8 @@ export const Home = () => {
                ".js-navItem",
                {
                   opacity: 0,
-                  y: 30,
-                  x: -50,
+                  y: 80,
+                  x: -120,
                   stagger: 0.3,
                   duration: 1.6,
                   ease: Power3.easeOut,
@@ -44,10 +44,11 @@ export const Home = () => {
                {
                   display: "none",
                   marginTop: 220,
+                  opacity: 0,
                   duration: 2,
                   ease: Back.easeOut.config(3),
                },
-               "-=1.5"
+               "-=1.2"
             )
             //Avatar
             .from(
@@ -101,6 +102,26 @@ export const Home = () => {
                   opacity: 0,
                },
                "-=0.5"
+            )
+            // .from(
+            //    ".js-greeting-slogan svg",
+            //    {
+            //       y: 20,
+            //       duration: 0.2,
+            //       opacity: 0,
+            //       ease: Power3.easeOut,
+            //    },
+            //    "-=0.5"
+            // )
+            .from(
+               ".greeting-emoji",
+               {
+                  marginTop: -2,
+                  duration: 0.3,
+                  opacity: 0,
+                  ease: Power3.easeOut,
+               },
+               "-=0.3"
             )
             .from(
                ".wave-container",

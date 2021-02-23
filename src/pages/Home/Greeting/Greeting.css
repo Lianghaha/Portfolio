@@ -29,23 +29,38 @@
 }
 
 .greeting .js-greeting-slogan {
-   margin-top: 10px;
+   margin-top: 12px;
    color: var(--main-color);
+   font-weight: 600;
+   /* emoji */
+   display: flex;
 }
 
 .greeting .js-greeting-slogan p {
-   display: inline;
+   /* display: inline; */
 }
 /* greeting icon */
-.greeting .js-greeting-slogan svg {
+/* react-icon */
+/* .greeting .js-greeting-slogan svg {
    margin-left: 5px;
    font-size: 1.5em;
    margin-bottom: -5.5px;
    transition: all 0.3s;
 }
-
 .greeting .js-greeting-slogan svg:hover {
    transform: scale(1.2);
+} */
+
+/* emoji */
+.greeting .greeting-emoji {
+   margin-left: 3px;
+   font-size: 1.5em;
+   margin-top: -12px;
+   transition: all 0.3s;
+}
+
+.greeting .greeting-emoji:hover {
+   transform: scale(1.25);
 }
 
 @media (min-width: 1024px) {
