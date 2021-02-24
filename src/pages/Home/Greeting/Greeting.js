@@ -54,8 +54,7 @@ export const Greeting = () => {
             <br />
             <div className="js-greeting-slogan">
                <p>
-                  {/* {" "} */}I can bring beautiful ideas to life, and I love
-                  what I do
+                  I can bring beautiful ideas to life, and I love what I do
                   <div className="greeting-emoji" role="img" aria-label="wink">
                      😉
                   </div>
