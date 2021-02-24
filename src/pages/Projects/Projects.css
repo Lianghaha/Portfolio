@@ -10,6 +10,11 @@
    padding-bottom: 500px;
 }
 
+.projects .navbar {
+   width: 100%;
+   align-self: flex-start;
+}
+
 .projects .content {
    width: 90%;
 }
@@ -20,13 +25,8 @@
    }
 }
 
-.projects .navbar {
-   width: 100%;
-   align-self: flex-start;
-}
-
-/** ----- General Card CSS -----*/
-.card-container {
+/** ----- Card CSS -----*/
+.projects .card-container {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -36,7 +36,7 @@
    -moz-perspective: 1500px;
    margin: 0 0;
 }
-.card {
+.projects .card {
    transform-style: preserve-3d;
    background-color: var(--card-color);
    width: 100%;
@@ -44,8 +44,14 @@
    -webkit-box-shadow: 0px 0px 10px -3px #cccccc;
    -moz-box-shadow: 0px 0px 10px -3px #cccccc;
    box-shadow: 0px 0px 10px -3px #cccccc;
-   padding: 20px 25px;
-   margin: 25px 20px;
+   padding: 25px 30px;
+   margin: 10px 20px;
+}
+
+.projects .vertical-card-container {
+}
+
+.projects .vertical-card {
 }
 
 .projects .horizontal-card-container {
@@ -56,17 +62,14 @@
 .projects .horizontal-card {
    height: 90%;
    width: 90%;
-}
-
-.projects .horizontal-card-title {
-   margin-bottom: 20px;
-   margin-left: 8px;
+   padding-bottom: 60px;
 }
 
 /**----- Titles -----*/
+/* Project Title */
 .projects .project-title-container {
    width: 100%;
-   margin: 0 22.5px;
+   margin: 10px 22.5px;
 }
 
 .projects .project-title {
@@ -104,9 +107,21 @@
    animation: bounce 1.8s infinite ease-in-out;
 }
 
+/* SubTitle */
 .projects .project-subtitle {
    width: 100%;
    margin: 0 22.5px;
+   margin-top: 50px;
+}
+
+/* Vertical Card Title */
+.projects .vertical-card h3 {
+}
+
+/* Horizontal Card Title */
+.projects .horizontal-card h3 {
+   margin-bottom: 20px;
+   margin-left: 8px;
 }
 
 /**-----  Project General -----*/
@@ -137,6 +152,31 @@
    max-height: 300px;
    object-fit: contain;
    margin: 10px 0;
+}
+
+/**-----  Project 2 - this.Portfolio -----*/
+
+.projects .stack {
+   width: 100%;
+}
+
+.projects .stack-card {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+   column-gap: 20px;
+   row-gap: 20px;
+   align-items: center;
+   padding: 30px 35px;
+}
+
+.projects .stack-card .tech-component {
+   margin: 0px 0px;
+   min-width: 230px;
+}
+
+/** ----- Text CSS -----*/
+.projects .description-card p {
+   margin-top: 10px;
 }
 
 /** Animation */
