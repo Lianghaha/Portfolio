@@ -36,7 +36,7 @@ export const Avatar = () => {
          // range from -20 to 80
          let yHigh = percentage(yPosition, height) - 20
          // range from -80 to 20
-         let yLow = percentage(yPosition, height) - 80
+         // let yLow = percentage(yPosition, height) - 80
 
          gsap.to(dom.rightEye, {
             yPercent: yHigh / 5,
@@ -93,7 +93,7 @@ export const Avatar = () => {
    return (
       <div className="avatar">
          <svg
-         className="avatar-circle"
+            className="avatar-circle"
             width="700"
             height="743"
             viewBox="0 0 700 743"

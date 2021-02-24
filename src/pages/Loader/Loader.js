@@ -1,9 +1,11 @@
 import React, { useLayoutEffect } from "react"
 import "./Loader.css"
 import { gsap, Elastic } from "gsap"
+import { useDispatch } from "react-redux"
+import { turnOffLoader } from "../../redux/actions"
 
-export const Loader = (props) => {
-   const { setLoader } = props
+export const Loader = () => {
+   const dispatch = useDispatch()
    useLayoutEffect(() => {
       gsap
          .timeline()
@@ -37,9 +39,17 @@ export const Loader = (props) => {
             y: 300,
             duration: 1,
             ease: Elastic.easeOut,
-            onComplete: setLoader,
-            onCompleteParams: [false],
          })
+         .to(
+            "svg",
+            {
+               scale: 0.01,
+               duration: 0.3,
+               onComplete: dispatch,
+               onCompleteParams: [turnOffLoader()],
+            },
+            "-=0.3"
+         )
    }, [])
    return (
       <div className="loader">

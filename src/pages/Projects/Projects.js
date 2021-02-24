@@ -1,6 +1,6 @@
-import React, { useEffect, useCallback } from "react"
+import React, { useLayoutEffect, useCallback } from "react"
 import "./Projects.css"
-import { gsap } from "gsap"
+import { gsap, Power2 } from "gsap"
 import { Navbar } from "../../lib/components/Navbar/Navbar"
 import { TechComponent } from "./TechComponent/TechComponent"
 
@@ -52,26 +52,36 @@ export const Projects = () => {
       })
    }, [])
 
-   useEffect(() => {
-      gsap.from(".js-project-slideIn", {
-         x: -80,
-         y: -80,
-         stagger: 0.2,
-         duration: 1.5,
-         opacity: 0,
-      })
+   useLayoutEffect(() => {
+      gsap
+         .timeline()
+         .from(
+            ".js-project-slideIn",
+            {
+               delay: 1.8,
+               x: -80,
+               y: -80,
+               stagger: 0.2,
+               duration: 1,
+               opacity: 0,
+               ease: Power2.easeOut,
+            },
+            "-=1"
+         )
+         .from(
+            ".tech-component",
+            {
+               marginTop: -30,
+               marginLeft: -30,
+               // scale: 0.01,
+               stagger: 0.15,
+               duration: 0.8,
+               opacity: 0,
+               ease: Power2.easeOut,
+            },
+            "-=3"
+         )
 
-      gsap.from(".tech-component", {
-         marginTop: -50,
-         marginLeft: -30,
-         stagger: 0.15,
-         duration: 1,
-         opacity: 0,
-      })
-
-      //Movement Animation to happen
-      // const cards = document.querySelectorAll(".card")
-      // const containers = document.querySelectorAll(".card-container")
       const verticalCards = document.querySelectorAll(".vertical-card")
       const verticalContainers = document.querySelectorAll(
          ".vertical-card-container"
@@ -177,7 +187,7 @@ export const Projects = () => {
                   </div>
                </div>
             </div>
-            <hr />
+            {/* <hr /> */}
             <div className="project-2 project-item">
                <div className="project-title-container js-project-slideIn">
                   <a
