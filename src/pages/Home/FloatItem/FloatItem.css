@@ -4,8 +4,8 @@
 
 .float-items .float-item {
    position: absolute;
-   max-width: 110px;
-   max-height: 110px;
+   max-width: 7.5rem;
+   max-height: 7.5rem;
 }
 
 .float-items .js-ballon {
@@ -46,8 +46,8 @@
    .float-items .js-ballon {
       left: 86%;
    }
-   .float-items .float-item {
+   /* .float-items .float-item {
       max-width: 135px;
       max-height: 135px;
-   }
+   } */
 }

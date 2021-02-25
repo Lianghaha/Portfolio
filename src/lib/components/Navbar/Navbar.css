@@ -28,7 +28,6 @@
 
 .navbar a {
    text-decoration: none;
-   margin: 0 10px;
    color: var(--main-color);
    font-weight: 500;
 }
@@ -77,4 +76,10 @@
 .navbar a:hover .nav-contact p {
    opacity: 1;
    transform: translateY(-35px);
+}
+
+@media (min-width: 768px) {
+   .navbar a {
+      margin: 0 10px;
+   }
 }
