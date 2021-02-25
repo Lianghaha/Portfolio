@@ -217,7 +217,7 @@ export const Projects = () => {
                   </div>
                </div>
             </div>
-            <hr className="js-project-slideIn" />
+            <hr />
             <div className="project-2 project-item">
                <div className="project-title-container js-project-slideIn">
                   <a
