@@ -28,7 +28,8 @@
    grid-column: 1 / 3;
    grid-row: 1 / 3;
    z-index: 1;
-   margin-bottom: 10vh;
+   margin-bottom: 11vh;
+   margin-left: 11vw;
 }
 
 .home .avatar {
@@ -36,7 +37,8 @@
    grid-row: 1 / 3;
    opacity: 0;
    margin-bottom: 10vh;
-   transition: opacity 0.5s;
+   padding-right: 11vw;
+   /* transition: opacity 0.5s; */
 }
 
 @media (min-width: 1024px) {

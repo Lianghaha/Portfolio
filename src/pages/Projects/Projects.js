@@ -56,34 +56,34 @@ export const Projects = () => {
 
    useLayoutEffect(() => {
       // Start Page Animation
-      // gsap
-      //    .timeline()
-      //    .from(
-      //       ".js-project-slideIn",
-      //       {
-      //          delay: 1.8,
-      //          x: -80,
-      //          y: -80,
-      //          stagger: 0.2,
-      //          duration: 1,
-      //          opacity: 0,
-      //          ease: Power2.easeOut,
-      //       },
-      //       "-=1"
-      //    )
-      //    .from(
-      //       ".tech-component",
-      //       {
-      //          marginTop: -30,
-      //          marginLeft: -30,
-      //          // scale: 0.01,
-      //          stagger: 0.15,
-      //          duration: 0.8,
-      //          opacity: 0,
-      //          ease: Power2.easeOut,
-      //       },
-      //       "-=3"
-      //    )
+      gsap
+         .timeline()
+         .from(
+            ".js-project-slideIn",
+            {
+               delay: 1.8,
+               x: -80,
+               y: -80,
+               stagger: 0.2,
+               duration: 1,
+               opacity: 0,
+               ease: Power2.easeOut,
+            },
+            "-=1"
+         )
+         .from(
+            ".tech-component",
+            {
+               marginTop: -30,
+               marginLeft: -30,
+               // scale: 0.01,
+               stagger: 0.1,
+               duration: 1,
+               opacity: 0,
+               ease: Power2.easeOut,
+            },
+            "-=3.5"
+         )
 
       // 3D Card Effect
       const verticalCards = document.querySelectorAll(".vertical-card")
@@ -330,7 +330,7 @@ export const Projects = () => {
                            <FiGithub />
                         </a>
                      </div>
-                     <h3>warehouse-management</h3>
+                     <h3>warehouse-system</h3>
                      <p>
                         A <span>Java</span> program that guides workers and
                         tracks the inventory in the warehouse. Practiced

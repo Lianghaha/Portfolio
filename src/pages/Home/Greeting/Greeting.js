@@ -53,12 +53,10 @@ export const Greeting = () => {
             <span className="js-greeting-letter js-bounceIn">!</span>
             <br />
             <div className="js-greeting-slogan">
-               <p>
-                  I can bring beautiful ideas to life, and I love what I do
-                  <div className="greeting-emoji" role="img" aria-label="wink">
-                     😉
-                  </div>
-               </p>
+               I can bring beautiful ideas to life, and I love what I do
+               <div className="greeting-emoji" role="img" aria-label="wink">
+                  😉
+               </div>
                {/* <FaRegSmileWink /> */}
             </div>
          </div>

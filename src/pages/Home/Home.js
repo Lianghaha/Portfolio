@@ -79,6 +79,7 @@ export const Home = () => {
          .from(
             ".greeting-emoji",
             {
+               marginTop: 5,
                opacity: 0,
                duration: 0.3,
             },

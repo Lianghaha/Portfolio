@@ -5,12 +5,13 @@
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
+   padding-right: 30px;
 }
 
 .greeting .greeting-animatedLetters {
    min-width: 320px;
    height: 210px;
-   margin: 0 5vw;
+   /* margin: 0 5vw; */
    display: inline-block;
 }
 
@@ -28,17 +29,12 @@
 }
 
 .greeting .js-greeting-slogan {
-   margin-top: 5px;
+   margin-top: 8px;
    color: var(--main-color);
    /* emoji */
    display: flex;
 }
-/* max-width: 399px;
-} */
 
-.greeting .js-greeting-slogan p {
-   line-height: 30px;
-}
 /* greeting icon */
 /* react-icon */
 /* .greeting .js-greeting-slogan svg {
@@ -53,10 +49,11 @@
 
 /* emoji */
 .greeting .greeting-emoji {
-   display: inline-block;
+   /* display: inline-block; */
    margin-left: 3px;
    font-size: 1.5em;
    transition: all 0.3s;
+   margin-top: -12px;
 }
 
 .greeting .greeting-emoji:hover {
@@ -65,7 +62,7 @@
 
 @media (min-width: 1024px) {
    .greeting .greeting-animatedLetters {
-      min-width: 390px;
+      min-width: 460px;
    }
 
    .greeting .js-greeting-letter {

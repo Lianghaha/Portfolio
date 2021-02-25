@@ -123,12 +123,17 @@
 
 /** ----- Text CSS -----*/
 .projects .description-card p {
-   margin-top: 10px;
+   margin-top: 15px;
+   line-height: 150%;
 }
 
 .projects .description-card p span {
    color: var(--main-color);
    font-weight: 600;
+}
+
+.projects .square-card p {
+   line-height: 150%;
 }
 
 /**-----  Project General -----*/
@@ -182,6 +187,7 @@
 
 /**-----  Other Projects -----*/
 .projects .square {
+   min-width: 300px;
 }
 .projects .square-card {
    position: relative;
