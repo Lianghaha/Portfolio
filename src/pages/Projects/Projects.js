@@ -27,22 +27,19 @@ import gsapIcon from "../../media/image/Projects/Stack-Icon/GSAP.png"
 import { BiLinkExternal } from "react-icons/bi"
 
 export const Projects = () => {
-   const animateCards = useCallback((container, card, xDivider, yDivider) => {
+   const animateCards = useCallback((container, card, horIndex, verIndex) => {
       //Moving Animation Event
       container.addEventListener("mousemove", (e) => {
-         //card center x Axis
+         //Card Center x Axis
          let x = card.getBoundingClientRect().left + card.clientWidth / 2
 
-         //card center y axis
+         //Card Center y axis
          let y = card.getBoundingClientRect().top + card.clientHeight / 2
 
-         let xDeg = (x - e.pageX) / xDivider
-         let yDeg = (e.pageY - window.pageYOffset - y) / yDivider
+         let xDeg = (x - e.pageX) / horIndex
+         let yDeg = (e.pageY - window.pageYOffset - y) / verIndex
 
          card.style.transform = `rotateY(${xDeg}deg) rotateX(${yDeg}deg)`
-         // let xAxis = (window.innerWidth / 2 - e.pageX) / 25
-         // let yAxis = (e.pageY - window.innerHeight / 2) / 25
-         // card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
       })
       //Animate In
       container.addEventListener("mouseenter", (e) => {
@@ -56,6 +53,7 @@ export const Projects = () => {
    }, [])
 
    useLayoutEffect(() => {
+      // Start Page Animation
       gsap
          .timeline()
          .from(
@@ -85,6 +83,7 @@ export const Projects = () => {
             "-=3"
          )
 
+      // 3D Card Effect
       const verticalCards = document.querySelectorAll(".vertical-card")
       const verticalContainers = document.querySelectorAll(
          ".vertical-card-container"
@@ -94,11 +93,36 @@ export const Projects = () => {
          ".horizontal-card-container"
       )
 
-      for (let i = 0; i < verticalContainers.length; i++) {
-         animateCards(verticalContainers[i], verticalCards[i], 39, 15)
+      let verCardHorIndex = 39
+      let verCardVerIndex = 8
+      const horCardHorIndex = 10
+      const horCardVerIndex = 25
+
+      // Adjust Card Effect According to screen Width
+      if (window.innerWidth < 600) {
+         verCardHorIndex = 20
+         verCardVerIndex = 30
+      } else if (window.innerWidth > 2000) {
+         verCardHorIndex = 70
+         verCardVerIndex = 8
       }
+
+      for (let i = 0; i < verticalContainers.length; i++) {
+         animateCards(
+            verticalContainers[i],
+            verticalCards[i],
+            verCardHorIndex,
+            verCardVerIndex
+         )
+      }
+
       for (let i = 0; i < horizontalContainers.length; i++) {
-         animateCards(horizontalContainers[i], horizontalCards[i], 10, 25)
+         animateCards(
+            horizontalContainers[i],
+            horizontalCards[i],
+            horCardHorIndex,
+            horCardVerIndex
+         )
       }
    }, [animateCards])
 
@@ -124,19 +148,19 @@ export const Projects = () => {
 
                <div className="description card-container vertical-card-container">
                   <div className="description-card card vertical-card js-project-slideIn">
-                     <h3>Description</h3>
+                     <h3>About this project</h3>
                      <p>
-                        FindTheProphets.com is a rating website that can help
-                        the users find out the credibility of the predictors.
-                        Users can search, filter, and rate different
-                        predictions. The predictions' score will affect related
-                        predictors' score, which indicates how credible a
-                        predictor is.
+                        <span>General: </span>FindTheProphets.com is a rating
+                        website that can help the users find out the credibility
+                        of the predictors. Users can search, filter, and rate
+                        different predictions. The predictions' score will
+                        affect related predictors' score, which indicates how
+                        credible a predictor is.
                      </p>
                      <p>
-                        Technically, it's a Full Stack React Web Application.
-                        The front-end, back-end and the database were all built
-                        by myself from scratch.
+                        <span>Technical: </span>It is a Full Stack React Web
+                        Application. The front-end, back-end, and database were
+                        all built by myself from scratch.
                      </p>
                   </div>
                </div>
@@ -145,18 +169,18 @@ export const Projects = () => {
                   <div className="description-card card vertical-card js-project-slideIn">
                      <h3>Why I built this project?</h3>
                      <p>
-                        During the pandemic, I saw too many unreliable daunting
-                        predictions intended just to attract attention. So I
-                        thought it would be a good idea to build a website to
-                        counter irresponsible predictors.
+                        <span>General: </span>During the pandemic, I saw too
+                        many unreliable daunting predictions intended just to
+                        attract attention. So I thought it would be a good idea
+                        to build a website to counter irresponsible predictors.
                      </p>
                      <p>
-                        Technically, I wanted to polish my front-end development
-                        skills(CSS, React, JavaScript ES6+), and deepen my
-                        understanding of full stack development. After I built
-                        this project, I can confidently say that I am capable to
-                        build a good looking full stack web application just by
-                        myself.
+                        <span>Technical: </span>I wanted to polish my front-end
+                        development skills (CSS, React, JavaScript ES6+), and
+                        deepen my understanding of full stack development. After
+                        I built this project, I can confidently say that I am
+                        capable of building good-looking full stack web
+                        applications just by myself.
                      </p>
                   </div>
                </div>
@@ -193,7 +217,7 @@ export const Projects = () => {
                   </div>
                </div>
             </div>
-            <hr />
+            <hr className="js-project-slideIn" />
             <div className="project-2 project-item">
                <div className="project-title-container js-project-slideIn">
                   <a
@@ -208,19 +232,15 @@ export const Projects = () => {
                </div>
                <div className="description card-container vertical-card-container">
                   <div className="description-card card vertical-card js-project-slideIn">
-                     <h3>Description</h3>
+                     <h3>About this project</h3>
                      <p>
-                        FindTheProphets.com is a rating website that can help
-                        the users find out the credibility of the predictors.
-                        Users can search, filter, and rate different
-                        predictions. The predictions' score will affect related
-                        predictors' score, which indicates how credible a
-                        predictor is.
+                        <span>General: </span>This is a Portfolio website where
+                        I can display my projects and other information in a
+                        prettier and more animated way.
                      </p>
                      <p>
-                        Technically, it's a Full Stack React Web Application.
-                        The front-end, back-end and the database were all built
-                        by myself from scratch.
+                        <span>Technical: </span>It is a pure Front-End React Web
+                        Application that focuses more on animation and design.
                      </p>
                   </div>
                </div>
@@ -229,18 +249,17 @@ export const Projects = () => {
                   <div className="description-card card vertical-card js-project-slideIn">
                      <h3>Why I built this project?</h3>
                      <p>
-                        During the pandemic, I saw too many unreliable daunting
-                        predictions intended just to attract attention. So I
-                        thought it would be a good idea to build a website to
-                        counter irresponsible predictors.
+                        <span>General: </span>I need a Portfolio website to show
+                        my projects and information. I could choose to build a
+                        quick and simple one, but I thought if I had to spend
+                        time to build one, why not make it more interesting?
                      </p>
                      <p>
-                        Technically, I wanted to polish my front-end development
-                        skills(CSS, React, JavaScript ES6+), and deepen my
-                        understanding of full stack development. After I built
-                        this project, I can confidently say that I am capable to
-                        build a good looking full stack web application just by
-                        myself.
+                        <span>Technical: </span>Building good-looking UI always
+                        makes me excited, and I am especially interested in
+                        animation. So I decided to learn more about animation
+                        and some design tools (Photoshop, Figma) through
+                        building this website.
                      </p>
                   </div>
                </div>

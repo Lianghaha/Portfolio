@@ -7,7 +7,7 @@
    align-content: flex-start;
    /* background-color: #4e54c8; */
    --card-color: #ffffff;
-   padding-bottom: 500px;
+   padding-bottom: 300px;
 }
 
 .projects .navbar {
@@ -49,6 +49,7 @@
 }
 
 .projects .vertical-card-container {
+   width: 100%;
 }
 
 .projects .vertical-card {
@@ -111,7 +112,7 @@
 .projects .project-subtitle {
    width: 100%;
    margin: 0 22.5px;
-   margin-top: 50px;
+   margin-top: 30px;
 }
 
 /* Vertical Card Title */
@@ -155,9 +156,7 @@
 }
 
 /**-----  Project 2 - this.Portfolio -----*/
-
 .projects .stack {
-   width: 100%;
 }
 
 .projects .stack-card {
@@ -167,6 +166,7 @@
    row-gap: 20px;
    align-items: center;
    padding: 30px 35px;
+   margin: 30px 20px;
 }
 
 .projects .stack-card .tech-component {
@@ -177,6 +177,11 @@
 /** ----- Text CSS -----*/
 .projects .description-card p {
    margin-top: 10px;
+}
+
+.projects .description-card p span {
+   color: var(--main-color);
+   font-weight: 600;
 }
 
 /** Animation */
