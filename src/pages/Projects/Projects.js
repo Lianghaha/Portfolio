@@ -218,6 +218,7 @@ export const Projects = () => {
                </div>
             </div>
             <hr />
+            <div className="break-line js-project-slideIn"></div>
             <div className="project-2 project-item">
                <div className="project-title-container js-project-slideIn">
                   <a
