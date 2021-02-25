@@ -50,8 +50,8 @@
 }
 
 .projects .horizontal-card-container {
-   width: 33.3%;
-   min-width: 280px;
+   width: 90%;
+   min-width: 238px;
 }
 
 .projects .horizontal-card {
@@ -73,12 +73,12 @@
    display: flex;
    flex-wrap: wrap;
    width: fit-content;
-   cursor: pointer;
+   /* cursor: pointer; */
    transition: all 0.3s;
    font-size: 0.75rem;
 }
 
-.projects .project-title:hover {
+.projects .project-title-hover:hover {
    transform: scale(1.02);
    -webkit-box-shadow: 0px 6px 1px -3px var(--main-color);
    -moz-box-shadow: 0px 6px 1px -3px var(--main-color);
@@ -119,6 +119,16 @@
 .projects .horizontal-card h3 {
    margin-bottom: 20px;
    margin-left: 8px;
+}
+
+/** ----- Text CSS -----*/
+.projects .description-card p {
+   margin-top: 10px;
+}
+
+.projects .description-card p span {
+   color: var(--main-color);
+   font-weight: 600;
 }
 
 /**-----  Project General -----*/
@@ -170,14 +180,77 @@
    min-width: 230px;
 }
 
-/** ----- Text CSS -----*/
-.projects .description-card p {
-   margin-top: 10px;
+/**-----  Other Projects -----*/
+.projects .square {
+}
+.projects .square-card {
+   position: relative;
+   padding: 25px 25px;
+   padding-bottom: 35px;
+   padding-right: 20px;
+}
+.projects .square-card .other-project-icons {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 10px;
 }
 
-.projects .description-card p span {
+/* Folder Icon */
+.projects .square-card .other-project-folder {
    color: var(--main-color);
-   font-weight: 600;
+   font-size: 3em;
+}
+
+/* Github Icon */
+.projects .square-card .other-project-github {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 50px;
+   width: 50px;
+   margin-top: -6px;
+   font-size: 1.6em;
+   color: #000000;
+   transition: all 0.3s;
+}
+
+.projects .square-card .other-project-github:hover {
+   transform: scale(1.2);
+   color: var(--main-color);
+}
+
+.projects .square-card h3 {
+   margin-left: 0;
+   margin-bottom: 8px;
+}
+
+.projects .square-card p {
+   font-size: 0.86em;
+   font-weight: 400;
+   line-height: 20px;
+}
+
+.projects .square-card p span {
+   color: var(--main-color);
+   font-weight: 500;
+}
+
+.projects .space-keywords {
+   /* background-color: pink; */
+   width: 100%;
+   height: 80px;
+}
+.projects .other-project-keywords {
+   position: absolute;
+   top: 82%;
+   color: var(--main-color);
+}
+
+.projects .other-project-keywords p {
+   display: inline-block;
+   margin-right: 15px;
 }
 
 /** Animation */
@@ -208,7 +281,13 @@
    .projects .project-subtitle {
       font-size: 1.5em;
    }
+   .projects .horizontal-card-container {
+      width: 33.3%;
+   }
 }
+
+/* @media (min-width: 768px) {
+} */
 
 @media (min-width: 1366px) {
    .projects .content {

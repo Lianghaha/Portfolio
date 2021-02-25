@@ -25,6 +25,8 @@ import gsapIcon from "../../media/image/Projects/Stack-Icon/GSAP.png"
 
 //React-Icon
 import { BiLinkExternal } from "react-icons/bi"
+import { HiOutlineFolder } from "react-icons/hi"
+import { FiGithub } from "react-icons/fi"
 
 export const Projects = () => {
    const animateCards = useCallback((container, card, verIndex, horIndex) => {
@@ -54,34 +56,34 @@ export const Projects = () => {
 
    useLayoutEffect(() => {
       // Start Page Animation
-      gsap
-         .timeline()
-         .from(
-            ".js-project-slideIn",
-            {
-               delay: 1.8,
-               x: -80,
-               y: -80,
-               stagger: 0.2,
-               duration: 1,
-               opacity: 0,
-               ease: Power2.easeOut,
-            },
-            "-=1"
-         )
-         .from(
-            ".tech-component",
-            {
-               marginTop: -30,
-               marginLeft: -30,
-               // scale: 0.01,
-               stagger: 0.15,
-               duration: 0.8,
-               opacity: 0,
-               ease: Power2.easeOut,
-            },
-            "-=3"
-         )
+      // gsap
+      //    .timeline()
+      //    .from(
+      //       ".js-project-slideIn",
+      //       {
+      //          delay: 1.8,
+      //          x: -80,
+      //          y: -80,
+      //          stagger: 0.2,
+      //          duration: 1,
+      //          opacity: 0,
+      //          ease: Power2.easeOut,
+      //       },
+      //       "-=1"
+      //    )
+      //    .from(
+      //       ".tech-component",
+      //       {
+      //          marginTop: -30,
+      //          marginLeft: -30,
+      //          // scale: 0.01,
+      //          stagger: 0.15,
+      //          duration: 0.8,
+      //          opacity: 0,
+      //          ease: Power2.easeOut,
+      //       },
+      //       "-=3"
+      //    )
 
       // 3D Card Effect
       const verticalCards = document.querySelectorAll(".vertical-card")
@@ -136,7 +138,7 @@ export const Projects = () => {
                </div>
                <div className="project-title-container js-project-slideIn">
                   <a
-                     className="project-title"
+                     className="project-title project-title-hover"
                      href="https://www.findtheprophets.com/"
                   >
                      <h1>
@@ -221,7 +223,7 @@ export const Projects = () => {
             <div className="project-2 project-item">
                <div className="project-title-container js-project-slideIn">
                   <a
-                     className="project-title"
+                     className="project-title project-title-hover"
                      href="https://lianghaha.github.io/Portfolio/#/"
                   >
                      <h1>
@@ -277,6 +279,70 @@ export const Projects = () => {
                      <TechComponent image={gitIcon} text="Git" />
                      <TechComponent image={psIcon} text="Photoshop" />
                      <TechComponent image={gsapIcon} text="GSAP Animation" />
+                  </div>
+               </div>
+               <div className="break-line js-project-slideIn"></div>
+               <div className="project-title-container js-project-slideIn">
+                  <div className="project-title">
+                     <h1>
+                        Other <span>Projects</span>
+                     </h1>
+                  </div>
+               </div>
+               <div className="square card-container horizontal-card-container">
+                  <div className="square-card card horizontal-card js-project-slideIn">
+                     <div className="other-project-icons">
+                        <div className="other-project-folder">
+                           <HiOutlineFolder />
+                        </div>
+                        <a
+                           className="other-project-github"
+                           href="https://github.com/Lianghaha/play-redux"
+                        >
+                           <FiGithub />
+                        </a>
+                     </div>
+                     <h3>play-redux</h3>
+                     <p>
+                        A simple web app built while I was learning Redux.
+                        Practiced integrating <span>Redux with React</span>,
+                        adding Redux <span>Middleware</span> and conducting
+                        <span> API Calls</span> while using Redux
+                     </p>
+                     <div className="space-keywords"></div>
+                     <div className="other-project-keywords">
+                        <p>Redux</p>
+                        <p>React</p>
+                        <p>JavaScript</p>
+                     </div>
+                  </div>
+               </div>
+               <div className="square card-container horizontal-card-container">
+                  <div className="square-card card horizontal-card js-project-slideIn">
+                     <div className="other-project-icons">
+                        <div className="other-project-folder">
+                           <HiOutlineFolder />
+                        </div>
+                        <a
+                           className="other-project-github"
+                           href="https://github.com/Lianghaha/warehouse-management"
+                        >
+                           <FiGithub />
+                        </a>
+                     </div>
+                     <h3>warehouse-management</h3>
+                     <p>
+                        A <span>Java</span> program that guides workers and
+                        tracks the inventory in the warehouse. Practiced
+                        <span> Object-Oriented Programming</span>,
+                        <span> MVC model</span> and learned some very useful
+                        <span> Design Patterns</span>
+                     </p>
+                     <div className="space-keywords"></div>
+                     <div className="other-project-keywords">
+                        <p>Java</p>
+                        <p>Design Patterns</p>
+                     </div>
                   </div>
                </div>
             </div>
