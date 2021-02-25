@@ -1,5 +1,4 @@
 /* Bitter Greeting Font */
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600;700&display=swap");
 
 .greeting {
    display: flex;
@@ -13,12 +12,12 @@
    height: 210px;
    margin: 0 5vw;
    display: inline-block;
-   font-family: "Bitter", serif;
-   font-weight: 500;
 }
 
 .greeting .js-greeting-letter {
    font-size: 2.3rem;
+   font-family: var(--greeting-font);
+   font-weight: 700;
    display: inline-block;
    transition: color 0.3s ease-out;
    color: var(--main-color);
@@ -31,7 +30,6 @@
 .greeting .js-greeting-slogan {
    margin-top: 5px;
    color: var(--main-color);
-   font-weight: 600;
    /* emoji */
    display: flex;
 }

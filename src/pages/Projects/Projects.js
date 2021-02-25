@@ -27,7 +27,7 @@ import gsapIcon from "../../media/image/Projects/Stack-Icon/GSAP.png"
 import { BiLinkExternal } from "react-icons/bi"
 
 export const Projects = () => {
-   const animateCards = useCallback((container, card, horIndex, verIndex) => {
+   const animateCards = useCallback((container, card, verIndex, horIndex) => {
       //Moving Animation Event
       container.addEventListener("mousemove", (e) => {
          //Card Center x Axis
@@ -36,8 +36,8 @@ export const Projects = () => {
          //Card Center y axis
          let y = card.getBoundingClientRect().top + card.clientHeight / 2
 
-         let xDeg = (x - e.pageX) / horIndex
-         let yDeg = (e.pageY - window.pageYOffset - y) / verIndex
+         let xDeg = (x - e.pageX) / verIndex
+         let yDeg = (e.pageY - window.pageYOffset - y) / horIndex
 
          card.style.transform = `rotateY(${xDeg}deg) rotateX(${yDeg}deg)`
       })
@@ -93,26 +93,40 @@ export const Projects = () => {
          ".horizontal-card-container"
       )
 
-      let verCardHorIndex = 39
-      let verCardVerIndex = 8
-      const horCardHorIndex = 10
-      const horCardVerIndex = 25
+      // let verCardHorIndex = 39
+      // let verCardVerIndex = 8
+      // const horCardHorIndex = 10
+      // const horCardVerIndex = 155
+
+      // // Adjust Card Effect According to screen Width
+      // if (window.innerWidth < 600) {
+      //    verCardHorIndex = 20
+      //    verCardVerIndex = 30
+      // } else if (window.innerWidth > 2000) {
+      //    verCardHorIndex = 70
+      //    verCardVerIndex = 8
+      // }
+
+      let verCardVerIndex = 50
+      let verCardHorIndex = 8
+      const horCardHorIndex = 39
+      const horCardVerIndex = 15
 
       // Adjust Card Effect According to screen Width
       if (window.innerWidth < 600) {
-         verCardHorIndex = 20
-         verCardVerIndex = 30
+         verCardVerIndex = 20
+         verCardHorIndex = 30
       } else if (window.innerWidth > 2000) {
-         verCardHorIndex = 70
-         verCardVerIndex = 8
+         verCardVerIndex = 70
+         verCardHorIndex = 8
       }
 
       for (let i = 0; i < verticalContainers.length; i++) {
          animateCards(
             verticalContainers[i],
             verticalCards[i],
-            verCardHorIndex,
-            verCardVerIndex
+            verCardVerIndex,
+            verCardHorIndex
          )
       }
 
@@ -120,8 +134,8 @@ export const Projects = () => {
          animateCards(
             horizontalContainers[i],
             horizontalCards[i],
-            horCardHorIndex,
-            horCardVerIndex
+            horCardVerIndex,
+            horCardHorIndex
          )
       }
    }, [animateCards])
