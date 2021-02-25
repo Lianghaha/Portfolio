@@ -22,6 +22,7 @@ import psIcon from "../../media/image/Projects/Stack-Icon/PS.png"
 import herokuIcon from "../../media/image/Projects/Stack-Icon/Heroku.png"
 import awsIcon from "../../media/image/Projects/Stack-Icon/AWS.png"
 import gsapIcon from "../../media/image/Projects/Stack-Icon/GSAP.png"
+import figmaIcon from "../../media/image/Projects/Stack-Icon/Figma.png"
 
 //React-Icon
 import { BiLinkExternal } from "react-icons/bi"
@@ -279,6 +280,7 @@ export const Projects = () => {
                      <TechComponent image={gitIcon} text="Git" />
                      <TechComponent image={psIcon} text="Photoshop" />
                      <TechComponent image={gsapIcon} text="GSAP Animation" />
+                     <TechComponent image={figmaIcon} text="Figma" />
                   </div>
                </div>
                <div className="break-line js-project-slideIn"></div>
@@ -342,6 +344,7 @@ export const Projects = () => {
                      <div className="other-project-keywords">
                         <p>Java</p>
                         <p>Design Patterns</p>
+                        <p>OOP</p>
                      </div>
                   </div>
                </div>
