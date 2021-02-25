@@ -129,18 +129,11 @@
    align-content: flex-start;
 }
 
-.projects hr {
-   margin: 70px 0;
-   opacity: 20%;
-   height: 2px;
-   background-color: black;
-}
-
 .projects .break-line {
    width: 100%;
-   margin: 70px 0;
+   margin: 100px 0;
    height: 2px;
-   background-color: rgba(0, 0, 0, 0.185);
+   background-color: rgba(0, 0, 0, 0.066);
 }
 
 /**-----  Project 1 - FindTheProphets.com -----*/
