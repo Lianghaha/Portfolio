@@ -290,8 +290,17 @@
    }
 }
 
-/* @media (min-width: 768px) {
-} */
+@media (min-width: 768px) {
+   .projects .content {
+      width: 90%;
+   }
+}
+
+@media (min-width: 1024px) {
+   .projects .content {
+      width: 80%;
+   }
+}
 
 @media (min-width: 1366px) {
    .projects .content {
@@ -307,6 +316,6 @@
 
 @media (min-width: 1920px) {
    .projects .content {
-      width: 55%;
+      width: 50%;
    }
 }
