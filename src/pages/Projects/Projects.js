@@ -5,7 +5,7 @@ import { Navbar } from "../../lib/components/Navbar/Navbar"
 import { TechComponent } from "./TechComponent/TechComponent"
 
 //Gif
-import responsiveGif from "../../media/image/Projects/Group-800.gif"
+import responsiveGif from "../../media/image/Projects/Opt-Group-800.gif"
 // Icon
 import reactIcon from "../../media/image/Projects/Stack-Icon/React.png"
 import jsIcon from "../../media/image/Projects/Stack-Icon/JavaScript.png"
