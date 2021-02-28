@@ -5,7 +5,7 @@ import { Navbar } from "../../lib/components/Navbar/Navbar"
 import { TechComponent } from "./TechComponent/TechComponent"
 
 //Gif
-import desktop from "../../media/image/Projects/Opt-FDP-Group-600.gif"
+import responsiveGif from "../../media/image/Projects/Group-800.gif"
 // Icon
 import reactIcon from "../../media/image/Projects/Stack-Icon/React.png"
 import jsIcon from "../../media/image/Projects/Stack-Icon/JavaScript.png"
@@ -135,7 +135,7 @@ export const Projects = () => {
          <div className="content">
             <div className="project-1 project-item">
                <div className="display-container js-project-slideIn">
-                  <img src={desktop} alt="" />
+                  <img src={responsiveGif} alt="" />
                </div>
                <div className="project-title-container js-project-slideIn">
                   <a
