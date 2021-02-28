@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react"
+import React, { useLayoutEffect, useState } from "react"
 import "./Navbar.css"
 import { Link } from "react-router-dom"
 import logo from "../../../media/image/logoBlue.svg"
@@ -12,6 +12,15 @@ import { gsap, Power3 } from "gsap"
 
 export const Navbar = () => {
    const dispatch = useDispatch()
+   const [scroll, setScroll] = useState(false)
+   const changeBackground = () => {
+      if (window.scrollY >= 100) {
+         setScroll(true)
+      } else {
+         setScroll(false)
+      }
+   }
+   window.addEventListener("scroll", changeBackground)
 
    useLayoutEffect(() => {
       // move top left animation
@@ -45,7 +54,7 @@ export const Navbar = () => {
    }, [])
 
    return (
-      <div className="navbar">
+      <div className={scroll ? "navbar navbar-active" : "navbar"}>
          <div className="nav-logo">
             <Link to="/" onClick={() => dispatch(turnOnLoader())}>
                <img src={logo} alt="logo" />
