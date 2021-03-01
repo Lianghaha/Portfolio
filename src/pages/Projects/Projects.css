@@ -138,6 +138,10 @@
 
 /**-----  Project General -----*/
 .projects .project-item {
+}
+
+.projects .project-info,
+.projects .project-stack {
    width: 100%;
    display: flex;
    flex-wrap: wrap;
