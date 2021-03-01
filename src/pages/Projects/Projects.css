@@ -171,6 +171,20 @@
 }
 
 /**-----  Project 2 - this.Portfolio -----*/
+
+/* GIF Display */
+/* .projects .display-card {
+   display: flex;
+   justify-content: center;
+}
+
+.projects .display-card img {
+   width: 100%;
+   max-height: 300px;
+   object-fit: contain;
+   margin-right: 6%;
+} */
+
 .projects .stack {
 }
 

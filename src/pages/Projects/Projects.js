@@ -6,7 +6,9 @@ import { Navbar } from "../../lib/components/Navbar/Navbar"
 import { TechComponent } from "./TechComponent/TechComponent"
 
 //Gif
-import responsiveGif from "../../media/image/Projects/Opt-Group-800.gif"
+import responsiveGifFTP from "../../media/image/Projects/Opt-FTP-800.gif"
+// import responsiveGifP from "../../media/image/Projects/P-800.gif"
+
 // Icon
 import reactIcon from "../../media/image/Projects/Stack-Icon/React.png"
 import jsIcon from "../../media/image/Projects/Stack-Icon/JavaScript.png"
@@ -251,7 +253,7 @@ export const Projects = () => {
             <div className="project-1 project-item">
                <div className="project-info">
                   <div className="display-container js-project-slideIn">
-                     <img src={responsiveGif} alt="" />
+                     <img src={responsiveGifFTP} alt="Respomsive Animation" />
                   </div>
                   <div className="project-title-container js-project-slideIn">
                      <a
@@ -343,6 +345,12 @@ export const Projects = () => {
 
             <div className="project-2 project-item">
                <div className="project-info">
+                  {/* GIF Display */}
+                  {/* <div className="display card-container vertical-card-container">
+                     <div className="display-card card vertical-card js-project-slideIn">
+                        <img src={responsiveGifP} alt="Respomsive Animation" />
+                     </div>
+                  </div> */}
                   <div className="project-title-container js-project-slideIn">
                      <a
                         className="project-title project-title-hover"
