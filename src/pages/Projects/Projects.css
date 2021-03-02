@@ -235,13 +235,12 @@
    height: 50px;
    width: 50px;
    margin-top: -6px;
-   font-size: 1.6em;
+   font-size: 1.66em;
    color: #000000;
-   transition: all 0.3s;
+   transition: color 0.5s;
 }
 
 .projects .square-card .other-project-github:hover {
-   transform: scale(1.2);
    color: var(--main-color);
 }
 
