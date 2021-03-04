@@ -50,7 +50,7 @@ export const Loader = () => {
             },
             "-=0.3"
          )
-   }, [])
+   }, [dispatch])
    return (
       <div className="loader">
          <svg

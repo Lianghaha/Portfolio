@@ -368,7 +368,7 @@ export const Projects = () => {
                         <p>
                            <span>General: </span>This is a Portfolio website
                            where I can display my projects and other information
-                           in a prettier and more animated way.
+                           in a more vivid way.
                         </p>
                         <p>
                            <span>Technical: </span>It is a pure Front-End React
@@ -391,8 +391,8 @@ export const Projects = () => {
                            <span>Technical: </span>Building good-looking UI
                            always makes me excited, and I am especially
                            interested in animation. So I decided to learn more
-                           about animation and some design tools (Photoshop,
-                           Figma) through building this website.
+                           about animation and also some design tools
+                           (Photoshop, Figma) through building this website.
                         </p>
                      </div>
                   </div>
