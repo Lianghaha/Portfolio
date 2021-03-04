@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
 import { HashRouter as Router, Switch, Route } from "react-router-dom"
@@ -9,6 +9,7 @@ import { Loader } from "./pages/Loader/Loader"
 import { createStore } from "redux"
 import allReducers from "./redux/reducers"
 import { Provider, useSelector } from "react-redux"
+import ReactGa from "react-ga"
 
 const store = createStore(
    allReducers,
@@ -16,6 +17,10 @@ const store = createStore(
 )
 
 function App() {
+   useEffect(() => {
+      ReactGa.initialize("UA-191127377-1")
+      ReactGa.pageview(window.location.href)
+   }, [])
    const loader = useSelector((state) => state.loader)
    return (
       <Router basename="/">

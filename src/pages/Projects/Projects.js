@@ -31,6 +31,8 @@ import figmaIcon from "../../media/image/Projects/Stack-Icon/Figma.png"
 import { BiLinkExternal } from "react-icons/bi"
 import { HiOutlineFolder } from "react-icons/hi"
 import { FiGithub } from "react-icons/fi"
+
+import ReactGa from "react-ga"
 gsap.registerPlugin(ScrollTrigger)
 
 export const Projects = () => {
@@ -60,51 +62,7 @@ export const Projects = () => {
    }, [])
 
    useLayoutEffect(() => {
-      // gsap
-      //    .timeline()
-      //    .from(
-      //       ".project-1 .js-project-slideIn",
-      //       {
-      //          delay: 1.8,
-      //          x: -80,
-      //          y: -80,
-      //          stagger: 0.2,
-      //          duration: 1,
-      //          opacity: 0,
-      //          ease: Power2.easeOut,
-      //       },
-      //       "-=1"
-      //    )
-      //    .from(
-      //       ".tech-component",
-      //       {
-      //          marginTop: -30,
-      //          marginLeft: -30,
-      //          // scale: 0.01,
-      //          stagger: 0.1,
-      //          duration: 1,
-      //          opacity: 0,
-      //          ease: Power2.easeOut,
-      //       },
-      //       "-=3.5"
-      //    )
-
-      // const slideIns = document.querySelectorAll(".js-project-slideIn")
-
-      // for (let i = 0; i < slideIns.length; i++) {
-      //    gsap.from(slideIns[i], {
-      //       scrollTrigger: {
-      //          trigger: slideIns[i],
-      //          start: "center center",
-      //       },
-      //       x: -80,
-      //       y: -80,
-      //       stagger: 0.2,
-      //       duration: 1,
-      //       opacity: 0,
-      //       ease: Power2.easeOut,
-      //    })
-      // }
+      ReactGa.pageview(window.location.href)
 
       // Start Page Animation
       gsap.from(".project-1 .project-info .js-project-slideIn", {
