@@ -9,7 +9,6 @@ export const Loader = () => {
    useLayoutEffect(() => {
       gsap
          .timeline()
-         //Navbar
          .from("#line1", {
             opacity: 0,
             duration: 0.2,
