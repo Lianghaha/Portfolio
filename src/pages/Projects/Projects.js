@@ -5,48 +5,50 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Navbar } from "../../lib/components/Navbar/Navbar"
 import { TechComponent } from "./TechComponent/TechComponent"
 import { Project1 } from "./Project1/Project1"
+import { Project2 } from "./Project2/Project2"
+
 // Icon
-import reactIcon from "../../media/image/Projects/Stack-Icon/React.png"
-import jsIcon from "../../media/image/Projects/Stack-Icon/JavaScript.png"
-import htmlIcon from "../../media/image/Projects/Stack-Icon/HTML5.png"
-import cssIcon from "../../media/image/Projects/Stack-Icon/CSS3.png"
-import axiosIcon from "../../media/image/Projects/Stack-Icon/Axios.png"
-import reduxIcon from "../../media/image/Projects/Stack-Icon/Redux.png"
-import nodeIcon from "../../media/image/Projects/Stack-Icon/Node.png"
-import expressIcon from "../../media/image/Projects/Stack-Icon/Express.png"
-import restAPIIcon from "../../media/image/Projects/Stack-Icon/RestAPI.png"
-import mySQLIcon from "../../media/image/Projects/Stack-Icon/MySQL.png"
-import gitIcon from "../../media/image/Projects/Stack-Icon/Git.png"
-import psIcon from "../../media/image/Projects/Stack-Icon/PS.png"
-import herokuIcon from "../../media/image/Projects/Stack-Icon/Heroku.png"
-import awsIcon from "../../media/image/Projects/Stack-Icon/AWS.png"
-import gsapIcon from "../../media/image/Projects/Stack-Icon/GSAP.png"
-import figmaIcon from "../../media/image/Projects/Stack-Icon/Figma.png"
+// import reactIcon from "../../media/image/Projects/Stack-Icon/React.png"
+// import jsIcon from "../../media/image/Projects/Stack-Icon/JavaScript.png"
+// import htmlIcon from "../../media/image/Projects/Stack-Icon/HTML5.png"
+// import cssIcon from "../../media/image/Projects/Stack-Icon/CSS3.png"
+// import axiosIcon from "../../media/image/Projects/Stack-Icon/Axios.png"
+// import reduxIcon from "../../media/image/Projects/Stack-Icon/Redux.png"
+// import nodeIcon from "../../media/image/Projects/Stack-Icon/Node.png"
+// import expressIcon from "../../media/image/Projects/Stack-Icon/Express.png"
+// import restAPIIcon from "../../media/image/Projects/Stack-Icon/RestAPI.png"
+// import mySQLIcon from "../../media/image/Projects/Stack-Icon/MySQL.png"
+// import gitIcon from "../../media/image/Projects/Stack-Icon/Git.png"
+// import psIcon from "../../media/image/Projects/Stack-Icon/PS.png"
+// import herokuIcon from "../../media/image/Projects/Stack-Icon/Heroku.png"
+// import awsIcon from "../../media/image/Projects/Stack-Icon/AWS.png"
+// import gsapIcon from "../../media/image/Projects/Stack-Icon/GSAP.png"
+// import figmaIcon from "../../media/image/Projects/Stack-Icon/Figma.png"
 //React-Icon
 import { BiLinkExternal } from "react-icons/bi"
 import { HiOutlineFolder } from "react-icons/hi"
 import { FiGithub } from "react-icons/fi"
 //Goggle Analytic
 import ReactGa from "react-ga"
-
-const icons = {
-   reactIcon,
-   jsIcon,
-   htmlIcon,
-   cssIcon,
-   axiosIcon,
-   reduxIcon,
-   nodeIcon,
-   expressIcon,
-   restAPIIcon,
-   mySQLIcon,
-   gitIcon,
-   psIcon,
-   herokuIcon,
-   awsIcon,
-   gsapIcon,
-   figmaIcon,
-}
+import { icons } from "./Stack-Icons-Resources"
+// const icons = {
+//    reactIcon,
+//    jsIcon,
+//    htmlIcon,
+//    cssIcon,
+//    axiosIcon,
+//    reduxIcon,
+//    nodeIcon,
+//    expressIcon,
+//    restAPIIcon,
+//    mySQLIcon,
+//    gitIcon,
+//    psIcon,
+//    herokuIcon,
+//    awsIcon,
+//    gsapIcon,
+//    figmaIcon,
+// }
 
 //GSAP Scroll Trigger
 gsap.registerPlugin(ScrollTrigger)
@@ -225,14 +227,10 @@ export const Projects = () => {
          <Navbar />
          <div className="content">
             <Project1 icons={icons} titleIcon={BiLinkExternal} />
-            <div className="project-2 project-item">
+            <Project2 icons={icons} titleIcon={BiLinkExternal} />
+
+            {/* <div className="project-2 project-item">
                <div className="project-info">
-                  {/* GIF Display */}
-                  {/* <div className="display card-container vertical-card-container">
-                     <div className="display-card card vertical-card js-project-slideIn">
-                        <img src={responsiveGifP} alt="Respomsive Animation" />
-                     </div>
-                  </div> */}
                   <div className="project-title-container js-project-slideIn">
                      <a
                         className="project-title project-title-hover"
@@ -298,9 +296,9 @@ export const Projects = () => {
                   </div>
                   <div className="break-line js-project-slideIn"></div>
                </div>
-            </div>
+            </div> */}
 
-            <div className="project-3 project-item">
+            {/* <div className="project-3 project-item">
                <div className="project-info">
                   <div className="project-title-container js-project-slideIn">
                      <div className="project-title">
@@ -368,6 +366,7 @@ export const Projects = () => {
                   </div>
                </div>
             </div>
+          */}
          </div>
       </div>
    )
