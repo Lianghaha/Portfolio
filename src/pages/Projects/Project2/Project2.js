@@ -7,7 +7,7 @@ export const Project2 = (props) => {
    const titleIcon = props.titleIcon
 
    return (
-      <div className="project-2 project-item">
+      <div className="project2 project-item">
          <div className="project-info">
             <div className="project-title-container js-project-slideIn">
                <a

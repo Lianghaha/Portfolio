@@ -6,6 +6,7 @@ import { Navbar } from "../../lib/components/Navbar/Navbar"
 import { Project1 } from "./Project1/Project1"
 import { Project2 } from "./Project2/Project2"
 import { Project3 } from "./Project3/Project3"
+import { Project4 } from "./Project4/Project4"
 import { icons } from "./Stack-Icons-Resources"
 //React-Icons
 import { BiLinkExternal } from "react-icons/bi"
@@ -46,7 +47,7 @@ export const Projects = () => {
       ReactGa.pageview(window.location.href)
 
       // Start Page Animation
-      gsap.from(".project-1 .project-info .js-project-slideIn", {
+      gsap.from(".project1 .project-info .js-project-slideIn", {
          delay: 1,
          x: -80,
          y: -80,
@@ -57,9 +58,9 @@ export const Projects = () => {
       })
 
       //Poject-1 Stack Cards
-      gsap.from(".project-1 .project-stack .js-project-slideIn", {
+      gsap.from(".project1 .project-stack .js-project-slideIn", {
          scrollTrigger: {
-            trigger: ".project-1 .project-stack",
+            trigger: ".project1 .project-stack",
             start: "top 50%",
          },
          x: -80,
@@ -71,9 +72,9 @@ export const Projects = () => {
       })
 
       //Poject-1 Stack tech-components
-      gsap.from(".project-1 .project-stack .tech-component", {
+      gsap.from(".project1 .project-stack .tech-component", {
          scrollTrigger: {
-            trigger: ".project-1 .project-stack",
+            trigger: ".project1 .project-stack",
             start: "top 50%",
          },
 
@@ -86,9 +87,9 @@ export const Projects = () => {
       })
 
       //Poject-2 Info Cards
-      gsap.from(".project-2 .project-info .js-project-slideIn", {
+      gsap.from(".project2 .project-info .js-project-slideIn", {
          scrollTrigger: {
-            trigger: ".project-2 .project-info",
+            trigger: ".project2 .project-info",
             start: "top 30%",
          },
          x: -80,
@@ -100,9 +101,9 @@ export const Projects = () => {
       })
 
       //Poject-2 Stack Cards
-      gsap.from(".project-2 .project-stack .js-project-slideIn", {
+      gsap.from(".project2 .project-stack .js-project-slideIn", {
          scrollTrigger: {
-            trigger: ".project-2 .project-stack",
+            trigger: ".project2 .project-stack",
             start: "top 30%",
          },
          x: -80,
@@ -114,9 +115,9 @@ export const Projects = () => {
       })
 
       //Poject-2 Stack tech-components
-      gsap.from(".project-2 .project-stack .tech-component", {
+      gsap.from(".project2 .project-stack .tech-component", {
          scrollTrigger: {
-            trigger: ".project-2 .project-stack",
+            trigger: ".project2 .project-stack",
             start: "top 30%",
          },
 
@@ -129,9 +130,23 @@ export const Projects = () => {
       })
 
       //Poject-3 Info Cards
-      gsap.from(".project-3 .project-info .js-project-slideIn", {
+      gsap.from(".project3 .project-info .js-project-slideIn", {
          scrollTrigger: {
-            trigger: ".project-3 .project-info",
+            trigger: ".project3 .project-info",
+            start: "top 5%",
+         },
+         x: -80,
+         y: -80,
+         stagger: 0.2,
+         duration: 1,
+         opacity: 0,
+         ease: Power2.easeOut,
+      })
+
+      //Poject-4 Info Cards
+      gsap.from(".project4 .project-info .js-project-slideIn", {
+         scrollTrigger: {
+            trigger: ".project4 .project-info",
             start: "top 5%",
          },
          x: -80,
@@ -151,11 +166,16 @@ export const Projects = () => {
       const horizontalContainers = document.querySelectorAll(
          ".horizontal-card-container"
       )
+      const squareCards = document.querySelectorAll(".square-card")
+      const squareContainers = document.querySelectorAll(
+         ".square-card-container"
+      )
 
       let verCardVerIndex = 50
       let verCardHorIndex = 8
       const horCardHorIndex = 39
       const horCardVerIndex = 15
+      const squCardIndex = 10
 
       // Adjust Card Effect According to screen Width
       if (window.innerWidth < 600) {
@@ -183,6 +203,14 @@ export const Projects = () => {
             horCardHorIndex
          )
       }
+      for (let i = 0; i < squareContainers.length; i++) {
+         animateCards(
+            squareContainers[i],
+            squareCards[i],
+            squCardIndex,
+            squCardIndex
+         )
+      }
    }, [animateCards])
 
    return (
@@ -192,6 +220,7 @@ export const Projects = () => {
             <Project1 icons={icons} titleIcon={BiLinkExternal} />
             <Project2 icons={icons} titleIcon={BiLinkExternal} />
             <Project3 folderIcon={HiOutlineFolder} />
+            <Project4 externalIcon={BiLinkExternal} />
          </div>
       </div>
    )

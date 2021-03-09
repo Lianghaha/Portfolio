@@ -20,7 +20,25 @@
    width: 95%;
 }
 
-/** ----- Card CSS -----*/
+.projects .project-item {
+}
+
+.projects .project-info,
+.projects .project-stack {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+}
+
+.projects .break-line {
+   width: 100%;
+   margin: 80px 0;
+   height: 2px;
+   background-color: rgba(0, 0, 0, 0.066);
+}
+
+/** -----General Card CSS -----*/
 .projects .card-container {
    display: flex;
    justify-content: center;
@@ -43,6 +61,8 @@
    margin: 10px 20px;
 }
 
+/** -----Project1 & 2 CSS -----*/
+/** -----Project1 & 2 General Card CSS -----*/
 .projects .vertical-card-container {
    width: 100%;
 }
@@ -61,11 +81,12 @@
    padding-bottom: 60px;
 }
 
-/**----- Titles -----*/
+/**----- Project1 & 2 Titles -----*/
 /* Project Title */
 .projects .project-title-container {
    width: 100%;
    margin: 15px 22.5px;
+   margin-top: 0px;
 }
 
 .projects .project-title {
@@ -121,7 +142,7 @@
    margin-left: 8px;
 }
 
-/** ----- Text CSS -----*/
+/** -----Project1 & 2 Text CSS -----*/
 .projects .description-card p {
    margin-top: 15px;
    line-height: 150%;
@@ -132,150 +153,7 @@
    font-weight: 600;
 }
 
-.projects .square-card p {
-   line-height: 150%;
-}
-
-/**-----  Project General -----*/
-.projects .project-item {
-}
-
-.projects .project-info,
-.projects .project-stack {
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: flex-start;
-}
-
-.projects .break-line {
-   width: 100%;
-   margin: 100px 0;
-   height: 2px;
-   background-color: rgba(0, 0, 0, 0.066);
-}
-
-/**-----  Project 1 - FindTheProphets.com -----*/
-.projects .display-container {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   padding: 30px 10px;
-}
-
-.projects .display-container img {
-   width: 100%;
-   max-height: 300px;
-   object-fit: contain;
-   margin: 10px 0;
-}
-
-/**-----  Project 2 - this.Portfolio -----*/
-
-/* GIF Display */
-/* .projects .display-card {
-   display: flex;
-   justify-content: center;
-}
-
-.projects .display-card img {
-   width: 100%;
-   max-height: 300px;
-   object-fit: contain;
-   margin-right: 6%;
-} */
-
-.projects .stack {
-}
-
-.projects .stack-card {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-   column-gap: 20px;
-   row-gap: 20px;
-   align-items: center;
-   padding: 30px 35px;
-   margin: 30px 20px;
-}
-
-.projects .stack-card .tech-component {
-   margin: 0px 0px;
-   min-width: 230px;
-}
-
-/**-----  Other Projects -----*/
-.projects .square {
-   min-width: 300px;
-}
-.projects .square-card {
-   position: relative;
-   padding: 25px 25px;
-   padding-bottom: 35px;
-   padding-right: 20px;
-}
-.projects .square-card .other-project-icons {
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin-bottom: 10px;
-}
-
-/* Folder Icon */
-.projects .square-card .other-project-folder {
-   color: var(--main-color);
-   font-size: 3em;
-}
-
-/* Github Icon */
-.projects .square-card .other-project-github {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 50px;
-   width: 50px;
-   margin-top: -6px;
-   font-size: 1.66em;
-   color: #000000;
-   transition: color 0.5s;
-}
-
-.projects .square-card .other-project-github:hover {
-   color: var(--main-color);
-}
-
-.projects .square-card h3 {
-   margin-left: 0;
-   margin-bottom: 8px;
-}
-
-.projects .square-card p {
-   font-size: 0.86em;
-   font-weight: 400;
-   line-height: 20px;
-}
-
-.projects .square-card p span {
-   color: var(--main-color);
-   font-weight: 500;
-}
-
-.projects .space-keywords {
-   width: 100%;
-   height: 80px;
-}
-.projects .other-project-keywords {
-   position: absolute;
-   top: 82%;
-   color: var(--main-color);
-}
-
-.projects .other-project-keywords p {
-   display: inline-block;
-   margin-right: 15px;
-}
-
-/** Animation */
+/**Project1 & 2 Animation */
 @-webkit-keyframes bounce {
    0%,
    100% {
@@ -296,6 +174,66 @@
    }
 }
 
+/**----- Project3 & 4 General CSS -----*/
+.projects .square {
+   min-width: 300px;
+}
+.projects .square-card {
+   position: relative;
+   padding: 25px 25px;
+   padding-bottom: 35px;
+   padding-right: 20px;
+   height: 90%;
+   width: 90%;
+}
+
+.projects .square-card .square-title-icons {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 10px;
+}
+
+/* Main Icon */
+.projects .square-card .square-title-main {
+   color: var(--main-color);
+   font-size: 3em;
+}
+
+/* External Icon */
+.projects .square-card .square-title-external {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 50px;
+   width: 50px;
+   margin-top: -6px;
+   font-size: 1.66em;
+   color: #000000;
+   transition: color 0.5s;
+}
+
+.projects .square-card .square-title-external:hover {
+   color: var(--main-color);
+}
+
+.projects .square-card h3 {
+   margin-left: 0;
+   margin-bottom: 8px;
+}
+
+.projects .square-card p {
+   font-size: 0.86em;
+   font-weight: 400;
+   line-height: 20px;
+}
+
+.projects .square-card p span {
+   color: var(--main-color);
+   font-weight: 500;
+}
+
 @media (min-width: 500px) {
    .projects .project-title {
       font-size: 1rem;
@@ -304,6 +242,9 @@
       font-size: 1.5em;
    }
    .projects .horizontal-card-container {
+      width: 33.3%;
+   }
+   .projects .square-card-container {
       width: 33.3%;
    }
 }

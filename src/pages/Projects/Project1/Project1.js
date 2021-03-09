@@ -9,7 +9,7 @@ export const Project1 = (props) => {
    const titleIcon = props.titleIcon
 
    return (
-      <div className="project-1 project-item">
+      <div className="project1 project-item">
          <div className="project-info">
             <div className="display-container js-project-slideIn">
                <img src={responsiveGifFTP} alt="Respomsive Animation" />

@@ -6,7 +6,7 @@ export const Project3 = (props) => {
    const folderIcon = props.folderIcon
 
    return (
-      <div className="project-3 project-item">
+      <div className="project3 project-item">
          <div className="project-info">
             <div className="project-title-container js-project-slideIn">
                <div className="project-title">
@@ -15,12 +15,12 @@ export const Project3 = (props) => {
                   </h1>
                </div>
             </div>
-            <div className="square card-container horizontal-card-container">
-               <div className="square-card card horizontal-card js-project-slideIn">
-                  <div className="other-project-icons">
-                     <div className="other-project-folder">{folderIcon()}</div>
+            <div className="square card-container square-card-container">
+               <div className="square-card card square-card js-project-slideIn">
+                  <div className="square-title-icons">
+                     <div className="square-title-main">{folderIcon()}</div>
                      <a
-                        className="other-project-github"
+                        className="square-title-external"
                         href="https://github.com/Lianghaha/play-redux"
                      >
                         <FiGithub />
@@ -41,12 +41,12 @@ export const Project3 = (props) => {
                   </div>
                </div>
             </div>
-            <div className="square card-container horizontal-card-container">
-               <div className="square-card card horizontal-card js-project-slideIn">
-                  <div className="other-project-icons">
-                     <div className="other-project-folder">{folderIcon()}</div>
+            <div className="square card-container square-card-container">
+               <div className="square-card card square-card js-project-slideIn">
+                  <div className="square-title-icons">
+                     <div className="square-title-main">{folderIcon()}</div>
                      <a
-                        className="other-project-github"
+                        className="square-title-external"
                         href="https://github.com/Lianghaha/warehouse-management"
                      >
                         <FiGithub />
@@ -68,6 +68,7 @@ export const Project3 = (props) => {
                   </div>
                </div>
             </div>
+            <div className="break-line js-project-slideIn"></div>
          </div>
       </div>
    )
