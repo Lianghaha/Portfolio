@@ -13,28 +13,7 @@ export const Project4 = (props) => {
                   <h1>Codepen</h1>
                </div>
             </div>
-            <div className="square card-container square-card-container">
-               <div className="square-card card square-card js-project-slideIn">
-                  <div className="square-title-icons">
-                     <div className="square-title-main">
-                        <ImCodepen />
-                     </div>
-                     <a
-                        className="square-title-external"
-                        href="https://codepen.io/leonhaha/pen/qBqyPvK"
-                     >
-                        {externalIcon()}
-                     </a>
-                  </div>
-                  <h3>3D-Cards</h3>
-                  <p>
-                     The creation of this effect was inspired by a video.
-                     However, to apply it on multiple cards, I had to find ways
-                     to locate every card's coordinate and solve the scrolling
-                     problems.
-                  </p>
-               </div>
-            </div>
+
             <div className="square card-container square-card-container">
                <div className="square-card card square-card js-project-slideIn">
                   <div className="square-title-icons">
@@ -56,6 +35,7 @@ export const Project4 = (props) => {
                   </p>
                </div>
             </div>
+
             <div className="square card-container square-card-container">
                <div className="square-card card square-card js-project-slideIn">
                   <div className="square-title-icons">
@@ -76,6 +56,28 @@ export const Project4 = (props) => {
                      <span>HTML</span>, and minimum help from <span>GSAP </span>
                      (It is also totally possible to use pure CSS to achieve the
                      same stagger effect).
+                  </p>
+               </div>
+            </div>
+            <div className="square card-container square-card-container">
+               <div className="square-card card square-card js-project-slideIn">
+                  <div className="square-title-icons">
+                     <div className="square-title-main">
+                        <ImCodepen />
+                     </div>
+                     <a
+                        className="square-title-external"
+                        href="https://codepen.io/leonhaha/pen/qBqyPvK"
+                     >
+                        {externalIcon()}
+                     </a>
+                  </div>
+                  <h3>3D Cards</h3>
+                  <p>
+                     The creation of this effect was inspired by a video.
+                     However, to apply it on multiple cards, I had to find ways
+                     to locate every card's coordinate and solve the scrolling
+                     problems.
                   </p>
                </div>
             </div>
